@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
+<title>앙앙 가는 길 · 치앙마이 11.22–27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF;
+  --panel:#F7F8FA;
+  --panel2:#EFF1F5;
+  --line:#E3E6EC;
+  --line2:#D3D8E1;
+  --ink:#14171E;
+  --ink2:#4F5665;
+  --ink3:#878F9E;
+  --gold:#956005;      --gold-bg:#FDF2DC;  --gold-line:#F0DCAE;
+  --jade:#11654F;      --jade-bg:#E0F0E9;  --jade-line:#BBDCCE;
+  --rose:#A62E52;      --rose-bg:#FCE3EA;  --rose-line:#F3C3D1;
+  --blue:#2A54A0;      --blue-bg:#E6ECF9;  --blue-line:#C4D2EF;
+  --r:14px;
+  --shadow:0 1px 2px rgba(20,23,30,.05), 0 8px 24px rgba(20,23,30,.06);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:64px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans KR","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:15.5px;line-height:1.72;-webkit-font-smoothing:antialiased;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+h1,h2,h3{font-family:"Gowun Batang","Apple SD Gothic Neo",serif;margin:0;text-wrap:balance}
+a{color:inherit}
+img{max-width:100%}
+.mono{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+
+.wrap{max-width:740px;margin:0 auto;padding-inline:18px}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);
+  backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line);
+  padding-top:env(safe-area-inset-top,0px);
+}
+.navrow{display:flex;gap:7px;overflow-x:auto;padding:11px 18px;scrollbar-width:none;-ms-overflow-style:none}
+.navrow::-webkit-scrollbar{display:none}
+.navrow a{
+  flex:none;text-decoration:none;font-size:13px;font-weight:600;color:var(--ink2);
+  background:var(--panel2);border-radius:999px;padding:6px 13px;white-space:nowrap;
+}
+.navrow a:active{background:var(--ink);color:#fff}
+
+/* ---------- hero ---------- */
+header.hero{padding-block:36px 30px;border-bottom:1px solid var(--line)}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:11px;
+}
+h1{font-size:clamp(36px,10vw,54px);line-height:1.08;font-weight:700;letter-spacing:-.015em}
+.lede{color:var(--ink2);font-size:15px;margin:14px 0 0}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:22px}
+.factbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 13px}
+.factbox dt{font-size:11px;color:var(--ink3);font-weight:600;letter-spacing:.04em;margin:0}
+.factbox dd{margin:3px 0 0;font-size:14.5px;font-weight:600;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+.factbox dd small{font-family:"IBM Plex Sans KR",sans-serif;font-weight:500;font-size:12.5px;color:var(--ink2);display:block;letter-spacing:0}
+
+/* ---------- section ---------- */
+section{padding-block:38px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.shead{margin-bottom:20px}
+h2{font-size:26px;font-weight:700;letter-spacing:-.015em;line-height:1.25}
+.shead p{color:var(--ink3);font-size:13.5px;margin:7px 0 0}
+
+/* ---------- alert ---------- */
+.alert{border-radius:var(--r);padding:17px 18px;margin-bottom:12px;border:1px solid}
+.alert.red{background:var(--rose-bg);border-color:var(--rose-line)}
+.alert.gold{background:var(--gold-bg);border-color:var(--gold-line)}
+.alert.jade{background:var(--jade-bg);border-color:var(--jade-line)}
+.alert h3{font-size:17.5px;margin-bottom:6px;line-height:1.35}
+.alert.red h3{color:var(--rose)}
+.alert.gold h3{color:var(--gold)}
+.alert.jade h3{color:var(--jade)}
+.alert p{margin:0;font-size:14px;line-height:1.68;color:var(--ink2)}
+.alert p + p{margin-top:8px}
+
+/* ---------- ask cards ---------- */
+.ask{background:var(--paper);border:1px solid var(--line2);border-radius:var(--r);
+     box-shadow:var(--shadow);padding:20px;margin-bottom:13px}
+.ask h3{font-size:20px;line-height:1.3}
+.ask .meta{display:block;font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+           color:var(--ink3);font-weight:500;margin-top:4px}
+.pc{display:flex;gap:10px;margin-top:12px;font-size:14px;line-height:1.62}
+.pc b{flex:none;font-size:11.5px;font-weight:700;padding-top:3px;letter-spacing:.02em}
+.pc.good b{color:var(--jade)}
+.pc.bad b{color:var(--rose)}
+.asklinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.btn{
+  display:inline-block;text-decoration:none;font-size:12.5px;font-weight:600;
+  border:1px solid var(--line2);border-radius:9px;padding:7px 12px;color:var(--ink2);
+  background:var(--panel);
+}
+.btn.go{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* ---------- rhythm ---------- */
+.rhythm{display:flex;flex-direction:column;gap:0}
+.rh{display:grid;grid-template-columns:78px 1fr;gap:14px;padding-block:14px;border-top:1px solid var(--line)}
+.rh:first-child{border-top:0;padding-top:0}
+.rh .t{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600;color:var(--gold);padding-top:2px}
+.rh strong{display:block;font-size:15px;margin-bottom:2px}
+.rh p{margin:0;font-size:13.5px;color:var(--ink2);line-height:1.6}
+.rh.hot .t{color:var(--rose)}
+
+/* ---------- day cards ---------- */
+.day{border:1px solid var(--line2);border-radius:var(--r);padding:0;margin-bottom:12px;overflow:hidden;background:var(--paper)}
+.day > .dh{display:flex;align-items:baseline;gap:10px;padding:14px 17px;border-bottom:1px solid var(--line);background:var(--panel)}
+.day .dnum{font-family:"IBM Plex Mono",monospace;font-size:19px;font-weight:600;letter-spacing:-.02em}
+.day .dow{font-size:12.5px;color:var(--ink3);font-weight:600}
+.day .dtag{margin-left:auto;font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px}
+.day ul{list-style:none;margin:0;padding:13px 17px;display:flex;flex-direction:column;gap:11px}
+.day li{display:grid;grid-template-columns:52px 1fr;gap:11px;font-size:14.5px;line-height:1.6}
+.day li .lt{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink3);padding-top:3px;font-weight:600}
+.day.festival{border-color:var(--gold-line)}
+.day.festival > .dh{background:var(--gold-bg)}
+.day.festival .dtag{background:var(--gold);color:#fff}
+.day.cad{border-color:var(--blue-line)}
+.day.cad > .dh{background:var(--blue-bg)}
+.day.cad .dtag{background:var(--blue);color:#fff}
+
+/* ---------- chips ---------- */
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;white-space:nowrap;vertical-align:1px}
+.chip.ask{background:var(--rose-bg);color:var(--rose)}
+.chip.lock{background:var(--jade-bg);color:var(--jade)}
+.chip.maybe{background:var(--panel2);color:var(--ink3)}
+.chip.free{background:var(--blue-bg);color:var(--blue)}
+
+/* ---------- table ---------- */
+.tblwrap{overflow-x:auto;border:1px solid var(--line2);border-radius:var(--r)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:340px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--panel);font-size:11.5px;color:var(--ink3);font-weight:700;letter-spacing:.04em;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.time{font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap;color:var(--blue)}
+
+/* ---------- place list ---------- */
+.places{display:flex;flex-direction:column}
+.p{display:flex;gap:13px;align-items:flex-start;padding-block:15px;border-top:1px solid var(--line)}
+.p:first-child{border-top:0;padding-top:4px}
+.pb{flex:1;min-width:0}
+.pn{font-weight:600;font-size:15.5px;line-height:1.4}
+.pn .price{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--gold);font-weight:600;margin-left:6px}
+.pd{color:var(--ink2);font-size:13.5px;margin-top:4px;line-height:1.62}
+.pm{display:block;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink3);margin-top:5px}
+.pin{flex:none;align-self:flex-start;margin-top:2px;text-decoration:none;font-size:11.5px;font-weight:700;
+     color:var(--jade);border:1px solid var(--jade-line);background:var(--jade-bg);
+     border-radius:9px;padding:6px 10px;white-space:nowrap}
+
+/* ---------- note ---------- */
+.note{background:var(--panel);border-left:3px solid var(--line2);border-radius:0 10px 10px 0;
+      padding:13px 15px;font-size:13.5px;color:var(--ink2);line-height:1.65;margin-top:16px}
+.note.warn{background:var(--rose-bg);border-left-color:var(--rose)}
+.note.tip{background:var(--jade-bg);border-left-color:var(--jade)}
+.note b{color:var(--ink)}
+
+/* ---------- numbered warnings ---------- */
+.wl{display:flex;flex-direction:column}
+.wi{display:grid;grid-template-columns:30px 1fr;gap:12px;padding-block:15px;border-top:1px solid var(--line)}
+.wi:first-child{border-top:0;padding-top:0}
+.wn{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600;color:var(--rose);padding-top:2px}
+.wi strong{display:block;font-size:15px;margin-bottom:3px}
+.wi p{margin:0;font-size:13.5px;color:var(--ink2);line-height:1.64}
+
+/* ---------- pack ---------- */
+.pack{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:8px}
+.pack label{display:flex;gap:9px;align-items:flex-start;background:var(--panel);
+            border:1px solid var(--line);border-radius:10px;padding:11px 13px;
+            font-size:13.5px;line-height:1.5;cursor:pointer}
+.pack input{margin:3px 0 0;flex:none;accent-color:var(--gold);width:16px;height:16px}
+.pack label:has(input:checked){opacity:.45}
+.pack label:has(input:checked) span{text-decoration:line-through}
+
+footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:center;line-height:1.75}
+
+@media (max-width:420px){
+  .facts{grid-template-columns:1fr}
+  .rh{grid-template-columns:66px 1fr;gap:11px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="navrow">
+    <a href="#pick">같이 정할 것</a>
+    <a href="#plan">날짜별</a>
+    <a href="#cad">11/25 콤로이</a>
+    <a href="#festival">축제</a>
+    <a href="#night">밤</a>
+    <a href="#eat">먹기</a>
+    <a href="#move">몸</a>
+    <a href="#money">돈</a>
+    <a href="#prep">입국·날씨</a>
+    <a href="#careful">주의</a>
+    <a href="#pack">짐</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Chiang Mai · Nov 2026</div>
+  <h1>앙앙 가는 길</h1>
+  <p class="lede">11월 22일 밤에 내려서 27일 밤에 나오는 5박 6일.<br>
+  러이끄라통이 통째로 껴 있어서 운이 좋아요 🏮</p>
+  <dl class="facts">
+    <div class="factbox"><dt>IN</dt><dd>11.22 <small>일요일 21:20 착륙</small></dd></div>
+    <div class="factbox"><dt>OUT</dt><dd>11.27 <small>금요일 22:15 출발</small></dd></div>
+    <div class="factbox"><dt>숙소</dt><dd style="font-size:14px">푸리푼 하이드웨이 <small>왓켓 · 핑강 동쪽</small></dd></div>
+    <div class="factbox"><dt>예매됨</dt><dd style="font-size:14px">CAD 콤로이 <small>11.25 프리미엄</small></dd></div>
+  </dl>
+</header>
+
+<!-- ============ ALERTS ============ -->
+<section id="alerts">
+  <div class="shead">
+    <h2>먼저 읽을 것 세 가지</h2>
+    <p>치앙마이시 공식 발표 기준이야. 영어 여행 사이트들은 날짜를 틀리게 적고 있어.</p>
+  </div>
+
+  <div class="alert red">
+    <h3>11/25에 대형 퍼레이드가 있는데, 우리는 콤로이 가 있어</h3>
+    <p>2026년 공식 일정상 <b>11/24(화)가 러이끄라통 보름 본날</b>, <b>11/25(수)가 “완끄라통야이” — 왕실컵 26개 행렬 대형 퍼레이드</b> 날이야. 퍼레이드는 타패게이트에서 출발해 시청까지 가는데, 2025년엔 18:30 출발이었어.</p>
+    <p>그런데 그날 우리는 <b>13:30에 콤로이 셔틀</b>을 타. 퍼레이드는 사실상 못 봐. 다만 복귀 1회차(21:00)를 타면 21:45쯤 생타완에 내리는데 퍼레이드 경로가 그 근처라 <b>꼬리는 볼 수도</b> 있어.</p>
+  </div>
+
+  <div class="alert gold">
+    <h3>항공편 한 번 확인해보자</h3>
+    <p>풍등 20만 개 때문에 공항이 운항을 조정했어. <b>11/21~28 사이 108편 취소, 80편 변경.</b> 제한 시간대는 11/24~25 19:00~01:00이라 우리 편(22일 도착·27일 출발)은 괜찮을 가능성이 높은데, 그래도 항공사에 한 번 확인하는 게 좋겠어.</p>
+  </div>
+
+  <div class="alert jade">
+    <h3>메인 행사장이 숙소 바로 앞으로 옮겨졌어</h3>
+    <p>2026년부터 메인 행사장이 타패게이트 광장에서 <b>똔람야이 시장 공원(핑강변)</b>으로 바뀌었어. 우리 숙소가 핑강 동쪽이라 <b>나와랏 다리만 건너면</b> 거기야. 끄라통 띄우는 구간(나와랏 다리~철교)도 집 앞이고. 24일엔 그랩도 필요 없어.</p>
+  </div>
+</section>
+
+<!-- ============ PICK ============ -->
+<section id="pick">
+  <div class="shead">
+    <h2>같이 정할 것</h2>
+    <p>이 세 개만 골라주면 나머지는 다 맞출 수 있어. 다 해도 되고 하나도 안 해도 돼.</p>
+  </div>
+
+  <div class="ask">
+    <h3>부아통 끈적이 폭포
+      <span class="meta">반나절 · 시내에서 90분 · 입장 무료</span></h3>
+    <div class="pc good"><b>좋은 점</b><span>석회(투파) 바위라 <b>맨발로 폭포를 거슬러 올라갈 수 있는</b> 곳. 한국엔 없어. 11월 말이 1년 중 가장 좋은 시기래 — 물이 제일 맑고 유량이 적어서 오르기 쉬움.</span></div>
+    <div class="pc bad"><b>걸리는 점</b><span>왕복 3시간이라 반나절이 통으로 날아가. <b>10시부터 사람 몰려서</b> 8시 반엔 도착해야 해. 샘물이라 처음 들어갈 땐 서늘함. 갈아입을 옷 한 벌 통째로 필요.</span></div>
+    <div class="asklinks">
+      <a class="btn go" href="https://www.google.com/maps/search/?api=1&query=Bua+Thong+Sticky+Waterfall+Chiang+Mai" target="_blank" rel="noopener">지도</a>
+      <a class="btn" href="https://www.klook.com/en-SG/activity/40622-sticky-waterfall-climbing-adventure-chiang-mai/" target="_blank" rel="noopener">클룩 투어 (4.8★)</a>
+      <a class="btn" href="https://www.youtube.com/results?search_query=bua+tong+sticky+waterfall" target="_blank" rel="noopener">영상으로 보기</a>
+    </div>
+    <div class="note">둘이서는 <b>차량+기사 반나절(800~1,200밧)</b>이 투어보다 싸고 시간도 자유로워. 맨발로 올라야 접지력이 좋고 아쿠아슈즈는 오히려 미끄럽대. 국립공원 지정 중이라 <b>갑자기 입장료가 생길 수도</b> 있으니 1인 200~400밧 현금은 챙기자.</div>
+  </div>
+
+  <div class="ask">
+    <h3>Looper 수영장 + 온천
+      <span class="meta">1인 250~300밧 · 07:00–21:00 · 예약 없이</span></h3>
+    <div class="pc good"><b>좋은 점</b><span>25m 수영장 + <b>40℃ 온천탕 + 14℃ 냉탕</b> 조합이 진짜 매력. “치앙마이에서 가장 저렴한 온천”이래. 샤워실 깨끗하고 샴푸·바디워시 있어서 <b>마지막 날 짐 맡기고 놀다 씻고 공항</b> 가기 딱 좋아.</span></div>
+    <div class="pc bad"><b>걸리는 점</b><span>파도풀 아니고 <b>조용한 랩 수영장</b>이야. 선베드에서 칵테일 마시는 곳 아님. 수영장 안 <b>선크림 금지</b>, 소음도 엄격. 락커 있는지 확인 안 됨.</span></div>
+    <div class="asklinks">
+      <a class="btn go" href="https://www.google.com/maps/search/?api=1&query=Looper%20Swimming%20Pool&query_place_id=ChIJqcUy8DI72jARCyQw56zsG5k" target="_blank" rel="noopener">지도</a>
+      <a class="btn" href="https://www.facebook.com/looperswimmingpool/" target="_blank" rel="noopener">페이스북</a>
+    </div>
+    <div class="note">님만 북서쪽 차로 10분. <b>수영 → 40℃ 온천 → 14℃ 냉탕 → 2층 카페</b> 코스로 1~3시간. 손님이 태국인이랑 디지털노마드라 차분해. 타월 대여 20밧.</div>
+  </div>
+
+  <div class="ask">
+    <h3>향수 만들기 — Artistic Lab
+      <span class="meta">1인 390~590밧 · 30~45분 · 수요일 휴무</span></h3>
+    <div class="pc good"><b>좋은 점</b><span>치앙마이 <b>유일한 제대로 된 조향 랩</b>. 향 200종쯤에서 최대 4개 골라서 섞고, <b>라벨 디자인하고 이름 붙여서</b> 병에 담아 나와. 둘이 각자 만들면 기념품으로 완벽. 싸고 빨라.</span></div>
+    <div class="pc bad"><b>걸리는 점</b><span>님만 아니고 북동쪽이라 그랩 10분. <b>11/25(수)는 휴무</b>. 영어 되는지는 명시가 없어서 DM 한 번 넣어보는 게 좋아.</span></div>
+    <div class="asklinks">
+      <a class="btn go" href="https://maps.app.goo.gl/Jmg8P7K5395ywEvD6" target="_blank" rel="noopener">지도</a>
+      <a class="btn" href="https://www.instagram.com/artistic.lab/" target="_blank" rel="noopener">인스타</a>
+      <a class="btn" href="https://www.timeout.com/chiang-mai/things-to-do/artistic-lab" target="_blank" rel="noopener">Time Out 소개</a>
+    </div>
+    <div class="note">10ml 기준 향 2종 390 / 3종 490 / 4종 590밧. 30ml은 3배, 50ml은 5배.<br>
+    참고로 한국 블로그에 나오는 <b>“저널”이랑 “미스(MITH)”는 향수 가게지 공방이 아니야</b> — 만드는 게 아니라 사는 곳. 쇼핑은 아래 ‘먹기’ 섹션 밑에 적어뒀어.</div>
+  </div>
+</section>
+
+<!-- ============ RHYTHM ============ -->
+<section id="rhythm">
+  <div class="shead">
+    <h2>하루를 이렇게 굴리면 돼</h2>
+    <p>달글 댓글에서 제일 많이 나온 조언이 “낮에 돌아다니지 마라”였어. 더위 피해서 시간대별로 짜는 게 핵심.</p>
+  </div>
+  <div class="rhythm">
+    <div class="rh"><div class="t">07–10시</div><div>
+      <strong>제일 좋은 시간. 움직이자</strong>
+      <p>선선하고 사람 없어. 러닝·요가·근교·오픈런 맛집. 조식도 이때.</p></div></div>
+    <div class="rh"><div class="t">10–13시</div><div>
+      <strong>실내로 서서히</strong>
+      <p>카페, 시장, 쇼핑몰. 점심은 가까운 데서 간단히.</p></div></div>
+    <div class="rh hot"><div class="t">13–17시</div><div>
+      <strong>🔥 피신 시간 — 밖에 나가지 마</strong>
+      <p>“13~17시는 숙소에서 누워있기, 안 그러면 쓰러짐”이 반복해서 나와. 마사지, 숙소 수영장, 낮잠, 에어컨 카페. 이때 체력을 아껴야 밤에 놀 수 있어.</p></div></div>
+    <div class="rh"><div class="t">17–20시</div><div>
+      <strong>메인 맛집 + 해질녘</strong>
+      <p>식당이 일찍 닫으니까 저녁은 좀 이르게. 일몰은 6시쯤.</p></div></div>
+    <div class="rh"><div class="t">20시–</div><div>
+      <strong>야시장 · 바 · 마사지</strong>
+      <p>재즈바·드래그쇼는 대부분 <b>자정이면 끝</b>. 마사지는 23시까지 하는 데도 있어.</p></div></div>
+  </div>
+  <div class="note tip">☕️ <b>카페는 대부분 17시에 닫아.</b> 저녁에 카페 가려다 전부 닫혀서 헤맸다는 후기가 여러 개 있었어. 늦게까지 하는 곳 하나 미리 찍어두자.</div>
+</section>
+
+<!-- ============ PLAN ============ -->
+<section id="plan">
+  <div class="shead">
+    <h2>날짜별 초안</h2>
+    <p>하루에 하나씩만. “투어 세 개 했더니 여유가 없어서 매력이 떨어졌다”는 후기가 제일 많았어. 바꿔도 돼.</p>
+  </div>
+
+  <div class="day">
+    <div class="dh"><span class="dnum">11.22</span><span class="dow">일요일</span><span class="dtag" style="background:var(--panel2);color:var(--ink3)">도착</span></div>
+    <ul>
+      <li><span class="lt">21:20</span><span>착륙. 입국심사는 1분컷이라는 후기가 많아</span></li>
+      <li><span class="lt">21:45</span><span>공항택시 부스 <b>정찰제</b> — SUV 150밧 / 벤 250~300밧. 밤에도 안전해. 숙소까지 6km, 15분</span></li>
+      <li><span class="lt">22:15</span><span>체크인 → 여유 있으면 <b>나이트바자 도보 9분</b>. 축제 인파 오기 전 유일한 날이라 오늘 소화해두면 좋아</span></li>
+      <li><span class="lt">밤</span><span>배고프면 창푸악 야시장(밤 12시까지) 또는 7-11</span></li>
+    </ul>
+  </div>
+
+  <div class="day">
+    <div class="dh"><span class="dnum">11.23</span><span class="dow">월요일</span><span class="dtag" style="background:var(--gold-bg);color:var(--gold)">축제 1일차</span></div>
+    <ul>
+      <li><span class="lt">08:30</span><span><span class="chip ask">정할 것</span> <b>부아통 폭포</b> — 일찍 가야 사람 없어</span></li>
+      <li><span class="lt">13:00</span><span>복귀 → 점심 → 피신 시간</span></li>
+      <li><span class="lt">17:00</span><span>⭐ <b>왓 쩨디루앙 촛불 행렬</b> — 라차담넌 로드에서 행렬 집결, 따라가면 사원 쩨디 둘레에서 촛불춤. 축제 중 <b>가장 조용하고 예쁜 장면</b>일 거야</span></li>
+      <li><span class="lt">21:00</span><span>North Gate Jazz (매일 함) 또는 숙소 근처 밴드바</span></li>
+    </ul>
+  </div>
+
+  <div class="day festival">
+    <div class="dh"><span class="dnum">11.24</span><span class="dow">화요일</span><span class="dtag">🏮 러이끄라통 본날</span></div>
+    <ul>
+      <li><span class="lt">낮</span><span>푹 쉬기. 밤에 다 써야 해. 향수 공방 가려면 오늘이 좋아 (수요일 휴무라서)</span></li>
+      <li><span class="lt">17:30</span><span><b>왓 판따오 + 왓 쩨디루앙</b> — 등이랑 촛불로 장식. 사진 제일 잘 나오는 시간</span></li>
+      <li><span class="lt">18:00</span><span><b>타패게이트</b> 도착 — 19:30 넘으면 극도로 혼잡해</span></li>
+      <li><span class="lt">19:00</span><span><b>나와랏 다리에서 끄라통 띄우기</b> — 숙소 바로 앞이야. 끄라통은 50밧부터, 바나나 줄기 소재로 사자. 풍등은 19:00부터 올라가</span></li>
+    </ul>
+  </div>
+
+  <div class="day cad">
+    <div class="dh"><span class="dnum">11.25</span><span class="dow">수요일</span><span class="dtag">콤로이</span></div>
+    <ul>
+      <li><span class="lt">오전</span><span>숙소 근처만. 왓켓 동네가 조용하고 예뻐</span></li>
+      <li><span class="lt">12:30</span><span>숙소 출발 → CMECC</span></li>
+      <li><span class="lt">13:00</span><span>CMECC 도착 (줄번호 마감 14:30)</span></li>
+      <li><span class="lt">~21:45</span><span>복귀 → 생타완 하차 → 숙소까지 도보 18분</span></li>
+    </ul>
+    <div style="padding:0 17px 15px"><a class="btn go" href="#cad">11/25 상세 보기 ↓</a></div>
+  </div>
+
+  <div class="day">
+    <div class="dh"><span class="dnum">11.26</span><span class="dow">목요일</span><span class="dtag" style="background:var(--jade-bg);color:var(--jade)">우리 날</span></div>
+    <ul>
+      <li><span class="lt">아침</span><span>앙깨우 저수지 러닝 (7시 반) 또는 모닝요가</span></li>
+      <li><span class="lt">11:00</span><span><b>무에타이 원데이</b> (410~440밧, 워크인) — 아니면 <span class="chip ask">정할 것</span> Looper 수영+온천</span></li>
+      <li><span class="lt">14:00</span><span><b>똑센 마사지</b> — 운동하고 받으면 딱이야</span></li>
+      <li><span class="lt">21:00</span><span>🏳️‍🌈 <b>BLOW CNX</b> 드래그쇼 (목요일이 쇼 하는 날) 또는 <b>식크릿쇼</b></span></li>
+    </ul>
+  </div>
+
+  <div class="day">
+    <div class="dh"><span class="dnum">11.27</span><span class="dow">금요일</span><span class="dtag" style="background:var(--panel2);color:var(--ink3)">마지막</span></div>
+    <ul>
+      <li><span class="lt">오전</span><span>체크아웃 → 호텔에 짐 맡기기 (며칠도 맡아준대)</span></li>
+      <li><span class="lt">낮</span><span>님만에서 향수 쇼핑 (MITH + Journal) 또는 Looper에서 수영하고 거기서 샤워</span></li>
+      <li><span class="lt">18:00</span><span>마지막 마사지</span></li>
+      <li><span class="lt">20:15</span><span>공항. 작아서 <b>2시간 전이면 넉넉</b>해. 숙소에서 15분</span></li>
+    </ul>
+    <div class="note" style="margin:0 17px 15px">🏳️‍🌈 아쉬운 점: <b>Sapphic Riot</b>(치앙마이 유일한 퀴어 여성 바)이 금·토가 제일 좋은 날인데, 우리는 금요일 밤에 비행기야. 19시 오픈이라 못 가. <b>수·목에 열면 25일이나 26일에 가보자</b> — 전화로 확인 필요.</div>
+  </div>
+</section>
+
+<!-- ============ CAD ============ -->
+<section id="cad">
+  <div class="shead">
+    <h2>11/25 콤로이 — 문앞부터 문앞까지</h2>
+    <p>프리미엄은 CMECC에서 타. 마야몰 출발은 Elite/Platinum 등급만이야.</p>
+  </div>
+
+  <div class="tblwrap">
+    <table>
+      <tr><th>시간</th><th>할 일</th></tr>
+      <tr><td class="time">12:30</td><td>숙소에서 그랩 호출 → <b>CMECC</b>까지 약 9km, 25~30분, 200밧쯤</td></tr>
+      <tr><td class="time">13:00</td><td>CMECC 도착. <b>14:30까지 줄번호를 받아야 해</b></td></tr>
+      <tr><td class="time">13–15시</td><td>셔틀 수시 출발 (막차 16:00) → 행사장까지 40분</td></tr>
+      <tr><td class="time">탑승 전</td><td>🔴 <b>하차 지점을 현장에서 고름 → “NIGHT BAZAAR” 선택</b></td></tr>
+      <tr><td class="time">21:00</td><td>복귀 셔틀 1회차 (전체의 80%가 이거 탐) · 2회차는 23:00</td></tr>
+      <tr><td class="time">21:45</td><td>생타완 교차로 하차 → 숙소까지 <b>도보 18분</b> 또는 썽태우 50~80밧</td></tr>
+    </table>
+  </div>
+
+  <div class="note warn">🚕 <b>기사한테는 “쩻러이삐”(700주년 경기장)라고 말해.</b> CMECC는 그 바로 옆이고, 현지인 누구나 아는 랜드마크야. 구글맵 주소가 안 뜨는 경우가 있어서 이게 확실해.</div>
+
+  <div class="note">🚌 하차지가 “나이트바자”라고 되어 있지만 실제로는 <b>생타완 교차로</b>야 — 골목이 좁고 막혀서 거기까지만 간대. 축제 밤이라 그랩은 안 잡힐 가능성이 크니까 걷거나 썽태우 타는 걸로 생각해두자.</div>
+
+  <div class="note tip">✅ <b>출발 전에 확인할 것:</b> 바우처에 적힌 정확한 집합 장소·시간(CMECC인지 마야몰인지), 왕복 셔틀 포함 여부. 축제 때문에 당일 픽업 위치가 바뀔 수도 있어서 하루 전에 운영사에 한 번 물어보는 게 좋아. <b>전 등급 환불 불가</b>야.</div>
+
+  <div class="asklinks">
+    <a class="btn go" href="https://maps.app.goo.gl/GKFutrom2232j2Zq8" target="_blank" rel="noopener">CMECC 지도</a>
+    <a class="btn" href="https://faceticket.net/en/manual/guide-for-fit-cad-khomloy-sky-lantern-festival-24-25-november-2026/" target="_blank" rel="noopener">공식 가이드</a>
+  </div>
+</section>
+
+<!-- ============ FESTIVAL ============ -->
+<section id="festival">
+  <div class="shead">
+    <h2>러이끄라통 — 무료 행사</h2>
+    <p>전부 공공 야외 행사라 돈 안 내. 치앙마이시 공식 발표(2026-10-07) 기준이야.</p>
+  </div>
+
+  <div class="tblwrap" style="margin-bottom:18px">
+    <table>
+      <tr><th>날짜</th><th>공식 명칭</th><th>내용</th></tr>
+      <tr><td class="time">11.23 월</td><td>축제 1일차</td><td>개막, 왓 쩨디루앙 촛불 행렬(17:00~)</td></tr>
+      <tr><td class="time">11.24 화</td><td>완끄라통렉<br>(작은 끄라통의 날)</td><td><b>보름 본날.</b> 핑강 끄라통 띄우기, 최대 인파, 풍등 1일차</td></tr>
+      <tr><td class="time">11.25 수</td><td>완끄라통야이<br>(큰 끄라통의 날)</td><td><b>왕실컵 26개 행렬 대형 퍼레이드</b>, 풍등 2일차</td></tr>
+    </table>
+  </div>
+
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">나와랏 다리 <span class="price">숙소 앞</span></div>
+      <div class="pd"><b>강 전망 최고의 무료 포인트.</b> 끄라통 띄우는 구간이 여기부터 철교까지야. 끄라통은 50밧부터, <b>바나나 줄기·바나나잎</b> 소재로 사자(스티로폼 말고). 시에서 커플당 1개를 권장해.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Nawarat+Bridge+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">왓 판따오 + 왓 쩨디루앙 <span class="price">17:30 도착</span></div>
+      <div class="pd">해질녘에 등이랑 촛불로 장식돼. <b>우리한테 제일 조용하고 사진 잘 나올 곳.</b> 23일 촛불 행렬도 여기로 들어와.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Wat+Phan+Tao+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">똔람야이 시장 공원 <span class="price">메인 행사장</span></div>
+      <div class="pd">2026년부터 여기가 메인이야. 개막식, 란나 등 경연, 미스터/미스 이펭 경연, 전통 공연. <b>숙소에서 다리만 건너면 돼.</b></div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Ton+Lamyai+Market+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">타패게이트 광장 <span class="price">11.23–25</span></div>
+      <div class="pd">빛·소리 멀티미디어 전시가 기간 내내 있고, <b>25일 대형 퍼레이드 출발점</b>이야. 24일엔 <b>18:00 전에 도착</b>해야 자리 잡아.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Tha+Phae+Gate+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+  </div>
+
+  <div class="note warn">
+    🏮 <b>풍등은 직접 날리지 마.</b> 허용은 11/24·25 19:00~익일 01:00 두 날뿐이고, 시내는 아예 금지됐다는 보도가 있어. 벌칙이 <b>최대 징역 5년, 벌금 20만 밧</b>으로 인용돼. 올려다보는 걸로 충분하고, 우리는 25일에 제대로 된 데서 날릴 거잖아.
+  </div>
+
+  <div class="note">⏰ <b>공식 시간표는 아직 안 나왔어.</b> 2026년 개막식·퍼레이드 시각이 미발표고, 도로 통제도 미공개야. 출발 직전에 <b>치앙마이시 페이스북</b> 한 번 확인하자. 위 시각들은 2025년 기준 참고치야.</div>
+</section>
+
+<!-- ============ NIGHT ============ -->
+<section id="night">
+  <div class="shead">
+    <h2>밤에 갈 곳</h2>
+    <p>퀴어 스팟이랑 라이브 음악. 전부 2025~2026년에 영업 확인된 곳만 적었어.</p>
+  </div>
+
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">🏳️‍🌈 Sapphic Riot <span class="price">입장 무료</span></div>
+      <div class="pd"><b>치앙마이에서 유일하게 퀴어 여성을 위해 만들어진 바.</b> 클럽이 아니라 대화하는 분위기야 — 앞뒤 정원 테라스, 페미니즘 책장, 로컬 아트, 상주 고양이랑 개. 옷 교환회랑 노래방도 해. 활동가 커플이 운영해.</div>
+      <span class="pm">올드시티 북서쪽 · 19:00–24:00 · ⚠️ 월·화 휴무 가능 → 전화 확인 +66 96 429 5692</span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Sapphic+Riot+Singharat+Rd+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">🏳️‍🌈 BLOW CNX <span class="price">커버 없음</span></div>
+      <div class="pd">님만 유일한 퀴어 바. 작고 혼성 손님층이라 커플이 그냥 편하게 놀기 좋아. <b>드래그쇼가 목·토</b>라 <b>11/26(목)에 딱 맞아.</b> K-pop 나이트도 있대.</div>
+      <span class="pm">님만 Soi 5 · 18:00–01:00 · 수요일 휴무</span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=BLOW+CNX+Nimman+Soi+5+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">식크릿쇼 (6ixcret) <span class="price">무료 + 음료 2잔</span></div>
+      <div class="pd">관광객용 레이디보이 쇼가 아니라 <b>진짜 드래그쇼</b>. 프로 드래그 퀸, 오리지널 안무, 프로그램이 매일 바뀜. 치앙마이 프라이드 공식 애프터파티 장소야. 트립어드바이저 4.9★.</div>
+      <span class="pm">나이트바자 건물 <b>2층</b> · 도어 19:00, 쇼 21:30 · 늦으면 입석 → 인스타 DM 예약 또는 20:30 도착 · ⚠️ 음악 아주 큼</span>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/NWmoH6SQCuzGnsB46" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Ram Bar <span class="price">입장료 없음</span></div>
+      <div class="pd">카바레 <b>매일 21:45</b>. 식크릿쇼에서 도보 5분이라 하루에 둘 다 가능해. 디바 트리뷰트 드래그. 식크릿쇼가 쉬는 날 대안으로 좋아.</div>
+      <span class="pm">나이트바자 Soi 6 · 좌석 적어서 <b>정오 이후 092 496 3962</b>로 예약 권장</span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Ram+Bar+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">The A Ter <span class="price">1인 400~600밧+</span></div>
+      <div class="pd"><b>제대로 된 데이트 자리로는 여기가 1순위.</b> 에어컨, 원형극장식 설계, 테이블 서비스, 스테이크 + 재즈. 다른 데처럼 서서 보는 게 아니라 <b>테이블을 예약할 수 있어.</b></div>
+      <span class="pm">나이트바자/핑강 쪽 · 17:30–24:00 · 페이스북으로만 예약 접수 · 철자 주의: The <b>A Ter</b></span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=The+A+Ter+Charoen+Prathet+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">North Gate Jazz Co-Op <span class="price">커버 없음</span></div>
+      <div class="pd">도시의 재즈 성지. 좁고 시끄럽고 진짜 로컬한 방이고, 오픈 잼이 그때 치앙마이에 있는 아무 뮤지션이나 끌어들여. <b>매일 해서 다른 데 다 닫는 날의 답이야.</b> 맥주 100~150밧.</div>
+      <span class="pm">창프억 게이트 옆 · 음악 19:30~ · 예약 불가, <b>19:45까지 도착</b> · ⚠️ 아주 시끄럽고 입석 — 조용한 데이트엔 별로</span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=North+Gate+Jazz+Co-Op+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">33 Melodic cnx <span class="price">숙소 근처</span></div>
+      <div class="pd">달글에서 “락페 좋아하면 무조건”이라고 추천한 밴드바. <b>8시엔 잔잔, 9시 반부터 트렌디, 11시부터 헤드뱅잉.</b> 숙소랑 같은 길(Charoen Muang Rd)에 있어.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/EXatya7GGZxUYUiA6" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">MaHoRee City of Music</div>
+      <div class="pd">프로그래밍이 제일 흥미로운 곳. 정통 재즈부터 <b>란나 전통악기랑 재즈의 교차</b>까지. 올드시티라 걸어갈 수 있어.</div>
+      <span class="pm">올드시티 Prapokklao Rd · 매일 18:30–24:00 · 워크인, 1층 금방 참</span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=MaHoRee+City+of+Music+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+  </div>
+
+  <div class="note">🏳️‍🌈 <b>둘이 다니는 거 전혀 문제 없어.</b> 태국은 2025년부터 동성결혼이 법제화됐고, 치앙마이는 태국에서도 퀴어 프렌들리한 편이야. 호텔 체크인에서 더블베드 때문에 곤란할 일도 없어.</div>
+  <div class="note warn">⚠️ 인터넷에 도는 <b>Golden Ball / Cupid / Soho / Femme Fatale</b>는 2007년 글이 출처야. 전부 폐업으로 보면 돼. 치앙마이 대부분 업소는 <b>자정~01:00에 닫아.</b></div>
+</section>
+
+<!-- ============ EAT ============ -->
+<section id="eat">
+  <div class="shead">
+    <h2>먹기</h2>
+    <p>달글 댓글 2,000개에서 반복해서 나온 것만. 지도 버튼 있는 건 다녀온 사람이 직접 올린 핀이야.</p>
+  </div>
+
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">창푸악 수끼 <span class="price">1위</span></div>
+      <div class="pd">압도적 1위. “한국 와서 제일 생각나는 맛”, “매일도 먹을 수 있음”. <b>국물 없는 버전</b> 추천이 많아. 배달도 돼.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Suki+Chang+Phueak+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">타밍 (Taming)</div>
+      <div class="pd">족발덮밥 + 곱창국수. “안 먹고 가려는 사람 생각 고쳐”라는 댓글이 있을 정도야. 쉬는 날 있으니 확인.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Taming+restaurant+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">블루누들 <span class="price">징짜이 지점</span></div>
+      <div class="pd">갈비국수. <b>징짜이 지점이 본점보다 맛있다</b>는 평. 인기라 아침 오픈런 하는 사람도 있어.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Blue+Noodle+Jing+Jai+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Khua Dee Cuisine</div>
+      <div class="pd">“일주일에 네 번 갔다”. 태국음식이 고기 위주라 <b>샐러드 시키면 한 바가지</b> 줘서 채소 보충용으로 좋아. 파스타랑 아침메뉴도 맛있고 양 많음. 사장님 친절.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/3ap4RAhVakbGCRmi6" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">JJ Pad Thai</div>
+      <div class="pd">모닝글로리 튀김 · 팟타이 · 똠얌꿍 다 맛있었다는 후기. “어제 저녁에 배불러도 다 먹은 모닝글로리 튀김이 생각나서 운다”고.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/LrBmejE6E3VoWTZb9" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Parin Home Cooking</div>
+      <div class="pd">팟카파오가 매콤하고 바질튀김이 파삭해서 아주 맛있대. 올드타운. 인테리어도 예뻐. 팟타이는 좀 단 편.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/35pEb1CnaZJvYLQt6" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Rodlamun <span class="price">에어컨</span></div>
+      <div class="pd">깔끔하고 에어컨 빵빵. <b>쏨땀 맵기 조절 가능</b>, 세트 메뉴 여러 개. 피신 시간에 좋아.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/Q2PAjrEpSXpvHuN18" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Rogu Roti (님만 Soi 3) <span class="price">새벽 1시까지</span></div>
+      <div class="pd">미니 사이즈 있어 (일반은 엄청 큼). 우유크림이 안 느끼하고 덜 달아. 따뜻한 차 무료. <b>술 먹고 단 거 땡길 때.</b></div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/41oqJ4YFmtHzhiuT9" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Yumpumajedyod (랭쌥)</div>
+      <div class="pd">“현지인밖에 없다고 해서 와봤는데 맛있어.”</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/iyHPNg6uapmuYCoR9" target="_blank" rel="noopener">지도</a></div>
+  </div>
+
+  <h3 style="font-size:19px;margin:30px 0 4px">카페</h3>
+  <p style="color:var(--ink3);font-size:13.5px;margin:0 0 14px">산미 있는 커피 좋아하면 치앙마이가 맞아. “방콕보다 커피 맛있는 카페가 많다”는 평이야.</p>
+
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">아르르 (Arrr / 아르밋)</div>
+      <div class="pd">오렌지커피 원조. “앙앙에서 제일 기억에 남는 곳”, “다른 카페 안 가도 대만족”. <b>디카페인도 여기 있어</b> (배달엔 디카페인 옵션 없어서 매장 가야 함). 수요일 휴무.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Arrr+coffee+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">그래프 (Graph) 29번 <span class="price">산미 강함</span></div>
+      <div class="pd"><b>산미가 제일 강한 곳.</b> 오렌지커피도 “그래프가 가장 청량하다”는 픽이 있어. 산미 싫어하는 사람은 속 울렁인다고 하니까 우리한테 딱.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Graph+Cafe+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Half.cnx <span class="price">숙소 도보권</span></div>
+      <div class="pd">달글에서 “분위기 미쳤다”고 한 곳. <b>숙소랑 같은 길(왓켓)</b>이라 아침에 걸어가기 좋아.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/zXHAZ64xYesKhbVQA" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">TWENTY MAR</div>
+      <div class="pd">“누들 먹고 떠돌다 들어갔는데 라떼 존맛.” 삼왕상 근처. 직원 친절. 좌석은 좀 불편하고 가격대 있어.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/hP42PQeMvrNvW54P7" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">페이퍼 스푼</div>
+      <div class="pd">초록초록하고 한적해서 오래 앉아있기 좋음.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Paper+Spoon+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+  </div>
+
+  <h3 style="font-size:19px;margin:30px 0 4px">향수 쇼핑 (만드는 게 아니라 사는 곳)</h3>
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">MITH Boutique <span class="price">399~2,859밧</span></div>
+      <div class="pd">한국 블로그의 “미스”가 이거야. 2015년 설립 태국 니치 브랜드. <b>님만 Soi 3</b> 단독 매장 (Soi 1은 옛 주소니까 주의). 매일 11:00–21:00.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=MITH+Boutique+Nimmanhaemin+Soi+3+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Journal (저널) <span class="price">50ml 2,600밧</span></div>
+      <div class="pd">2017년 태국 브랜드. <b>첫 매장이 치앙마이 One Nimman</b>이었어. 시그니처는 “The Legacy”. 마야몰·센트럴에도 있어. 무료 시향 가능.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Journal+Perfume+One+Nimman+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+  </div>
+</section>
+
+<!-- ============ MOVE ============ -->
+<section id="move">
+  <div class="shead">
+    <h2>몸 쓰는 것</h2>
+  </div>
+
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">무에타이 원데이 <span class="price">410~440밧</span></div>
+      <div class="pd">코치 4~5명이 미트 잡아줘서 여러 번 칠 수 있어. 글러브 대여 포함, <b>예약 없이 워크인.</b> “체력 거지인데 맞춰서 해줬다”, “요가보다 훨씬 재밌었다”는 후기가 반복돼. 러닝하는 사람한테 특히 평이 좋아.</div>
+      <span class="pm">MONEY MUAY THAI 2 · Huay Kaew Rd</span>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/G4TnaT78TPYLjm3T9" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Krudam Gym <span class="price">439밧</span></div>
+      <div class="pd">대안. 그룹이 2명이라 거의 개인레슨이었다는 후기. 인스타 DM·클룩 예약 또는 워크인.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/aRQzs5pegzc4UoR46" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Green Bamboo — 똑센 <span class="price">1시간 400밧</span></div>
+      <div class="pd">란나 전통 <b>나무망치로 두드려서</b> 근막 푸는 마사지. 일반 타이마사지랑 완전히 달라. <b>가성비 최고</b>(Fah Lanna는 1,600밧). 올드시티. 4.7★ 리뷰 1,100건.</div>
+      <span class="pm">월~금 10:00–21:00, 주말 11:00– · ⚠️ 메뉴상 애드온이라 단독 가능한지 전화 확인 089-827-5563 · 현금 선호</span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Green+Bamboo+Massage+Moon+Muang+Soi+1+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Fah Lanna Spa — 똑센 <span class="price">1시간 1,600밧</span></div>
+      <div class="pd">제대로 된 스파로 가고 싶으면 여기. 정원 세팅, 지점 3개. <b>둘이 한 방</b> 쓰고 싶으면 LINE으로 명시해서 요청해야 해.</div>
+      <span class="pm">12:00–21:00 (오전 없음, 마지막 예약 20:00) · LINE <b>@fahlannaspa</b></span>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Fah+Lanna+Spa+Wiang+Kaew+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">앙깨우 저수지 (치앙마이대)</div>
+      <div class="pd">러닝 1순위. “<b>아침 7시 반</b>에 갔더니 사람 엄청 많고 선선했다”. 저녁엔 일몰 명소인데 해가 6시쯤 지니까 5시 반 도착.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Ang+Kaew+Reservoir+Chiang+Mai+University" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">치앙마이역 공원 <span class="price">숙소 도보권</span></div>
+      <div class="pd">“러닝이나 걷기 좋고 깔끔, <b>화장실 건물도 신식</b>. 리틀 룸피니 느낌”. 숙소랑 같은 왓켓 동네라 아침에 바로 나가면 돼.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/mEWosmHhfbpDeHGE8" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">올드타운 발마사지 <span class="price">늦게까지</span></div>
+      <div class="pd">“앉아서 말고 <b>누워서</b> 받는 건데 마지막에 상체도 해줌. 개시원.” 밤늦게까지 해서 야시장 끝나고 가기 좋아.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/xMwPjFUoHHEQwT1u6" target="_blank" rel="noopener">지도</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">Porjai Express Hair Wash <span class="price">길이별</span></div>
+      <div class="pd">머리만 감겨주는 가게. <b>샴푸를 세 번</b> 해줘. 땀 뻘뻘 흘린 날 1시간 끼워넣기 좋아. 가격표는 구글맵에 있어.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/rZ7j9jV6jtuJpi889" target="_blank" rel="noopener">지도</a></div>
+  </div>
+
+  <div class="note warn">🏃‍♀️ <b>현실 경고:</b> “러닝화·러닝조끼 바리바리 싸왔는데 늦게 일어나고 해 뜨니 더워서 한 번도 못 뛰었다”는 후기가 여러 개야. 뛸 거면 <b>무조건 6~7시대</b>. 양말 꼭 챙기자.</div>
+</section>
+
+<!-- ============ MONEY ============ -->
+<section id="money">
+  <div class="shead">
+    <h2>돈</h2>
+    <p>둘이 5박이면 <b>8,000~10,000밧 현금 + 카드</b>가 적당해. 카드 되는 곳이 생각보다 적어서 부족했다는 후기가 많아.</p>
+  </div>
+
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">트래블월렛 — 결제용으로 쓰자</div>
+      <div class="pd">태국은 <b>ATM 출금할 때 현지 은행 수수료가 건당 220밧</b> 붙는다는 얘기가 많아 (은행·기기마다 다를 수 있으니 화면에 뜨는 금액 꼭 확인). 그래서 <b>출금 말고 결제에 쓰는 게 이득.</b> 그랩에 등록해두면 편해.</div>
+    </div></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">현금은 한국에서 원화 → 시내 환전소</div>
+      <div class="pd">공항 환율은 별로야. <b>한국에서 원화(5만원권)를 가져가서 시내 환전소</b>에서 바꾸는 게 제일 좋다는 의견이 많아. ⚠️ 타패게이트 근처 환전소는 <b>일요일 휴무</b>인 데가 있어.</div>
+    </div></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">첫날 밤은 현금 0원이어도 돼</div>
+      <div class="pd">그랩은 앱 결제, <b>7-11은 200밧부터 카드</b>, 마트는 금액 상관없이 카드. 환전은 다음날 느긋하게 하면 돼.</div>
+    </div></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">GLN (네이버페이·토스)</div>
+      <div class="pd">QR 결제 되는 가게가 꽤 있어. 다만 <b>어디서 되는지 찾기가 어렵다</b>는 후기. 보조 수단으로.</div>
+    </div></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">카시콘 ATM (초록색) <span class="price">수수료 500원</span></div>
+      <div class="pd">꼭 출금해야 하면 여기. 우리카드 EXK로 <b>수수료 총 500원</b>이었다는 후기. 구글맵 검색엔 안 나오고 Ploen Laundry 바로 옆이래.</div>
+    </div>
+      <a class="pin" href="https://maps.app.goo.gl/KkfLbL8nh5xfXmkn7" target="_blank" rel="noopener">지도</a></div>
+  </div>
+
+  <div class="note">💵 <b>현금 꼭 필요한 곳:</b> 부아통 폭포(입장료 생길 수도, 락커 30밧), 끄라통 사기, 썽태우, 길거리 음식, 작은 마사지샵, 공항 면세점 일부. 빅씨에서 3,000밧 이상 결제하면 여권 필요해.</div>
+</section>
+
+<!-- ============ PREP ============ -->
+<section id="prep">
+  <div class="shead">
+    <h2>입국 · 이심 · 날씨</h2>
+  </div>
+
+  <div class="places">
+    <div class="p"><div class="pb">
+      <div class="pn">TDAC (태국 디지털 입국신고서) <span class="price">필수 · 무료</span></div>
+      <div class="pd">2025년부터 종이 입국카드가 없어지고 <b>온라인으로 미리 작성</b>해야 해. <b>도착 3일 전부터</b> 작성 가능하고, 하고 나면 QR이 나와. 현장에서 QR을 확인 안 하는 경우도 있다지만 안 하고 가면 안 돼.<br>한국 여권은 <b>무비자 60일</b>.</div>
+    </div>
+      <a class="pin" href="https://tdac.immigration.go.th/" target="_blank" rel="noopener">작성</a></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">이심 <span class="price">도착일 날짜로</span></div>
+      <div class="pd">밤 9시 20분 도착이니까 <b>개통일을 11/22로</b> 사두자. 하루 당겨 사는 게 안전하다는 조언이 많아. 공항 와이파이가 잘 터져서 현지 도착해서 설치해도 되긴 해.</div>
+    </div></div>
+
+    <div class="p"><div class="pb">
+      <div class="pn">날씨 — 앱 믿지 마</div>
+      <div class="pd">“날씨 앱(노르웨이 기상청 포함)은 다 안 맞는다”가 달글 공통 의견이야. 비 예보여도 안 오거나, 갑자기 소나기가 쏟아져. <b>11월은 건기 시작이라 낮 29~30℃, 아침저녁은 선선</b>한 게 기본값이야.</div>
+    </div>
+      <a class="pin" href="https://www.accuweather.com/en/th/chiang-mai/318849/daily-weather-forecast/318849" target="_blank" rel="noopener">예보</a></div>
+  </div>
+
+  <div class="asklinks" style="margin-top:16px">
+    <a class="btn go" href="https://www.google.com/search?q=chiang+mai+weather" target="_blank" rel="noopener">지금 날씨 (구글)</a>
+    <a class="btn" href="https://www.windy.com/?18.788,99.007,10" target="_blank" rel="noopener">Windy 비구름</a>
+    <a class="btn" href="https://weather.com/weather/tenday/l/18.79,99.01" target="_blank" rel="noopener">10일 예보</a>
+  </div>
+</section>
+
+<!-- ============ CAREFUL ============ -->
+<section id="careful">
+  <div class="shead">
+    <h2>꼭 알아둘 것</h2>
+  </div>
+  <div class="wl">
+    <div class="wi"><div class="wn">01</div><div>
+      <strong>주말 마켓을 하나도 못 가</strong>
+      <p>22일이 일요일인데 21:20 착륙이라 선데이마켓(22:30 마감)은 사실상 불가, 27일은 금요일이라 새러데이마켓도 안 돼. 달글 1위 추천이 선데이마켓인데 이게 빠져. 대신 <b>나이트바자·아누산 마켓</b>(매일, 숙소 도보 9분), <b>창푸악 야시장</b>(매일 밤 12시까지), <b>치앙마이게이트 야시장</b>(매일), <b>와로롯 시장</b>(숙소 도보권)으로 대체. 근데 러이끄라통 기간이라 그게 메인일 거야.</p>
+    </div></div>
+    <div class="wi"><div class="wn">02</div><div>
+      <strong>낮 1~5시엔 돌아다니지 마</strong>
+      <p>“오후 1시부터는 걸어다니지 말 것”, “13~17시는 숙소에서 누워있기, 안 그러면 쓰러짐”이 반복해서 나와. 그 시간엔 마사지·카페·낮잠.</p>
+    </div></div>
+    <div class="wi"><div class="wn">03</div><div>
+      <strong>일교차가 커서 겉옷 필수</strong>
+      <p>낮엔 나시로 충분한데 밤엔 긴팔·후드집업까지 등장해. <b>실내 에어컨이 너무 추워서</b> 겉옷 입었다는 후기도 많아. 11월 중순엔 경량패딩 입은 사람도 있었대.</p>
+    </div></div>
+    <div class="wi"><div class="wn">04</div><div>
+      <strong>밤 골목 조심</strong>
+      <p>올드타운 골목이 어두워서 <b>단차 못 보고 넘어져 다친 사례</b>가 있었어. 신호등이 거의 없어서 길 건널 땐 현지인 따라 건너기. 들개도 있어.</p>
+    </div></div>
+    <div class="wi"><div class="wn">05</div><div>
+      <strong>축제 기간엔 그랩이 안 잡혀</strong>
+      <p>24·25일은 이동 시간을 넉넉히 잡자. 도로 통제도 있을 거고. 숙소가 행사장 바로 앞이라 걸어다니는 게 제일 빠를 거야.</p>
+    </div></div>
+    <div class="wi"><div class="wn">06</div><div>
+      <strong>모기 · 배탈</strong>
+      <p>모기 물린 데 바르는 약 챙기고(눈가엔 바르지 마), 지사제랑 감기약도. 에어컨 때문에 냉방병 걸렸다는 후기가 꽤 있어.</p>
+    </div></div>
+    <div class="wi"><div class="wn">07</div><div>
+      <strong>식당·카페가 일찍 닫아</strong>
+      <p>저장해둔 곳이 다 닫혀 있었다는 후기가 여러 개. 저녁은 좀 이르게 먹고, 가기 전에 구글맵에서 영업시간 한 번 보자.</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- ============ PACK ============ -->
+<section id="pack">
+  <div class="shead">
+    <h2>챙길 것</h2>
+    <p>달글에서 “이건 꼭”이라고 나온 것들. 눌러서 체크하면 저장돼 (각자 폰에서 따로).</p>
+  </div>
+  <div class="pack">
+    <label><input type="checkbox" id="k1"><span>얇은 겉옷 (실내 에어컨용)</span></label>
+    <label><input type="checkbox" id="k2"><span>우산 또는 우양산</span></label>
+    <label><input type="checkbox" id="k3"><span>러닝화 + 양말</span></label>
+    <label><input type="checkbox" id="k4"><span>수영복 (온천·폭포)</span></label>
+    <label><input type="checkbox" id="k5"><span>폭포용: 갈아입을 옷 한 벌 통째로</span></label>
+    <label><input type="checkbox" id="k6"><span>폭포용: 타월 + 방수팩</span></label>
+    <label><input type="checkbox" id="k7"><span>선크림 (화장품은 이것만 있으면 됨)</span></label>
+    <label><input type="checkbox" id="k8"><span>지사제 · 감기약</span></label>
+    <label><input type="checkbox" id="k9"><span>모기 물린 데 바르는 약</span></label>
+    <label><input type="checkbox" id="k10"><span>크로스백 (백팩은 등이 더워)</span></label>
+    <label><input type="checkbox" id="k11"><span>이심 (11/22 개통)</span></label>
+    <label><input type="checkbox" id="k12"><span>TDAC 작성 (도착 3일 전부터)</span></label>
+    <label><input type="checkbox" id="k13"><span>원화 현금 (시내 환전용)</span></label>
+    <label><input type="checkbox" id="k14"><span>트래블월렛 충전</span></label>
+  </div>
+  <div class="note tip">🧴 <b>안 챙겨도 되는 것:</b> 손풍기, 돼지코 어댑터(태국은 한국 플러그 그대로 들어가), 세면용품(7-11에 다 있음), 샤워필터(숙소에 있는 경우 많음), 요가매트.</div>
+</section>
+
+<footer>
+  여성시대 태국 여행 달글 102·103차 댓글 약 2,000개 +<br>
+  치앙마이시 공식 발표, 2026년 현지 매체·리뷰를 교차 확인해서 만들었어요.<br>
+  <span style="opacity:.7">마지막 업데이트 2026.11.15</span>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var KEY='cnx2611-pack', saved={};
+  try{ saved=JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ saved={}; }
+  document.querySelectorAll('.pack input[type="checkbox"]').forEach(function(b){
+    if(saved[b.id]) b.checked=true;
+    b.addEventListener('change',function(){
+      saved[b.id]=b.checked;
+      try{ localStorage.setItem(KEY,JSON.stringify(saved)); }catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
