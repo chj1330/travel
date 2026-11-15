@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name>치앙마이 — 그 외 추천</name>
+<Style id="s0"><IconStyle><color>ff3b30ff</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s1"><IconStyle><color>fff5860b</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s2"><IconStyle><color>ff2fa8ea</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s3"><IconStyle><color>ff7db34f</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s4"><IconStyle><color>ffb3834f</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s5"><IconStyle><color>ffb34fa0</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s6"><IconStyle><color>ff4f7db3</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Folder><name>디저트</name>
+<Placemark><name>치윗치바</name><description>망고빙수<br><br>※ 구글맵에서 "Cheewit Cheeva, Chiang Mai" 검색</description><styleUrl>#s0</styleUrl>
+<address>Cheewit Cheeva, Chiang Mai</address>
+</Placemark>
+<Placemark><name>쿤캐 주스바</name><description>망고스무디·아사이볼 / 사람 많음 / 아사이볼은 안 시원하다는 평도<br><br>※ 구글맵에서 "Khun Kae Juice Bar, Chiang Mai" 검색</description><styleUrl>#s0</styleUrl>
+<address>Khun Kae Juice Bar, Chiang Mai</address>
+</Placemark>
+<Placemark><name>주스트 (Juice)</name><description>스무디 / 블랙세서미 개맛 / 배달 가능 / 망고스틴 시즌아웃</description><styleUrl>#s0</styleUrl>
+<Point><coordinates>98.998024,18.781126,0</coordinates></Point>
+</Placemark>
+<Placemark><name>반피엠숙</name><description>태국 전통 간식<br><br>※ 구글맵에서 "Baan Piam Suk, Chiang Mai" 검색</description><styleUrl>#s0</styleUrl>
+<address>Baan Piam Suk, Chiang Mai</address>
+</Placemark>
+<Placemark><name>훗카이도 도넛</name><description>특별하진 않지만 치앙마이 빵 중엔 맛있다는 평<br><br>※ 구글맵에서 "Hokkaido Donut, Chiang Mai" 검색</description><styleUrl>#s0</styleUrl>
+<address>Hokkaido Donut, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>마사지</name>
+<Placemark><name>Phu Fah Luang Massage</name><description>2주 매일 받은 것 중 최고라는 후기 / 어깨·목 집중 / 타이마사지<br><br>※ 구글맵에서 "Phu Fah Luang massage, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Phu Fah Luang massage, Chiang Mai</address>
+</Placemark>
+<Placemark><name>devi 마사지</name><description>물리치료사급이라는 평 / 미리 예약 필수 / 주말 휴무 있음<br><br>※ 구글맵에서 "Devi Massage, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Devi Massage, Chiang Mai</address>
+</Placemark>
+<Placemark><name>for you thai massage</name><description>태달 픽 / 바오바오(약하게) 요청하면 안 아프고 시원 / GLN 결제됨<br><br>※ 구글맵에서 "For You Thai Massage, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>For You Thai Massage, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Samantha Massage</name><description>올드타운 딥티슈 1시간 550밧 / 아프고 시원 / 머리마사지 좋음<br><br>※ 구글맵에서 "Samantha Massage, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Samantha Massage, Chiang Mai</address>
+</Placemark>
+<Placemark><name>라벤더 톡센</name><description>똑센 전문 / 매일 10-23시로 늦게까지 / ⚠️ 리뷰 4건뿐이고 부상 신고 1건 있어 조심<br><br>※ 구글맵에서 "Lavender Tok Sen Massage, Moon Muang Soi 7, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Lavender Tok Sen Massage, Moon Muang Soi 7, Chiang Mai</address>
+</Placemark>
+<Placemark><name>기빙트리 마사지 (올타)</name><description>세게 받는 편 / 살짝 아프지만 시원<br><br>※ 구글맵에서 "Giving Tree Massage, Old City, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Giving Tree Massage, Old City, Chiang Mai</address>
+</Placemark>
+<Placemark><name>언니네일</name><description>한국인 많음 / 만족도 높음 / 자석네일 500밧<br><br>※ 구글맵에서 "Unni Nail, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Unni Nail, Chiang Mai</address>
+</Placemark>
+<Placemark><name>네일타운 스튜디오</name><description>올드타운 / 기본 매니큐어 299밧 / ⚠️ 피 봤다는 후기 있음<br><br>※ 구글맵에서 "Nail Town Studio, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Nail Town Studio, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>맛집</name>
+<Placemark><name>란쪽빠렉</name><description>팟씨유 50밧·국물수끼 50밧 존맛 / 맥주 안 팔아 앞 편의점에서 / 30분 넘게 걸림<br><br>※ 구글맵에서 "Lan Jok Pa Lek, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Lan Jok Pa Lek, Chiang Mai</address>
+</Placemark>
+<Placemark><name>피티 (Phithi)</name><description>비프누들·똠얌누들·팟카파오무쌉 / 미슐랭급인데 1시간 걸림 / 애매한 시간에 가면 빨라<br><br>※ 구글맵에서 "Phithi, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Phithi, Chiang Mai</address>
+</Placemark>
+<Placemark><name>미진타이푸드</name><description>타패게이트 근처 / 타이티 25밧 똠얌꿍 60밧 치킨볶음밥 40밧 / 종이에 적어 주문</description><styleUrl>#s2</styleUrl>
+<Point><coordinates>98.992731,18.790971,0</coordinates></Point>
+</Placemark>
+<Placemark><name>넹무옵옹</name><description>유명하지만 호불호 / 배달 시 쌈야채 안 옴 / 에어컨방은 자리세 10밧<br><br>※ 구글맵에서 "Neng Moo Ob Ong, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Neng Moo Ob Ong, Chiang Mai</address>
+</Placemark>
+<Placemark><name>한시간 무삥</name><description>태달 픽 돼지꼬치 / 먹은 것 중 1등이라는 후기 / 17:15엔 아직 준비 중<br><br>※ 구글맵에서 "Moo Ping Nimman, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Moo Ping Nimman, Chiang Mai</address>
+</Placemark>
+<Placemark><name>타이툰반</name><description>아침 식당 / 6:30 오픈런도 빡셀 정도로 인기<br><br>※ 구글맵에서 "Thai Toon Baan, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Thai Toon Baan, Chiang Mai</address>
+</Placemark>
+<Placemark><name>앨리스 키친</name><description>똠얌 / 영업시간 변동 있으니 확인<br><br>※ 구글맵에서 "Alice Kitchen, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Alice Kitchen, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Smash Daddy&#x27;s</name><description>님만 수제버거 / 인생 버거라는 후기<br><br>※ 구글맵에서 "Smash Daddys, Nimman, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Smash Daddys, Nimman, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Muay Khao Soi</name><description>님만 카오소이 / 할머니 두 분이 운영<br><br>※ 구글맵에서 "Muay Khao Soi, Nimman, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Muay Khao Soi, Nimman, Chiang Mai</address>
+</Placemark>
+<Placemark><name>레몬슈가로띠</name><description>꼭 먹어라는 후기 / 편의점 앞에서 와로롯으로 이전<br><br>※ 구글맵에서 "Lemon Sugar Roti, Warorot, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Lemon Sugar Roti, Warorot, Chiang Mai</address>
+</Placemark>
+<Placemark><name>폿토 (김치 샤브샤브)</name><description>김치육수 샤브샤브 / 얼큰한 거 땡길 때<br><br>※ 구글맵에서 "Pot To, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Pot To, Chiang Mai</address>
+</Placemark>
+<Placemark><name>바미째후아</name><description>마라우육면 국물 좋음 / 찐만두 추천<br><br>※ 구글맵에서 "Bami Jae Hua, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Bami Jae Hua, Chiang Mai</address>
+</Placemark>
+<Placemark><name>솜펫 시장</name><description>과일·간식 / 두리안은 호텔 반입 금지라 밖에서<br><br>※ 구글맵에서 "Somphet Market, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Somphet Market, Chiang Mai</address>
+</Placemark>
+<Placemark><name>lampo 과일가게</name><description>망고스틴 1kg 50밧 / 손질해주고 썩은 건 교체<br><br>※ 구글맵에서 "Lampo fruit, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Lampo fruit, Chiang Mai</address>
+</Placemark>
+<Placemark><name>마나 망고</name><description>망고 스티키 라이스<br><br>※ 구글맵에서 "Mana Mango, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Mana Mango, Chiang Mai</address>
+</Placemark>
+<Placemark><name>아스마로띠</name><description>산띠탐 로띠 / 에그로띠·모짜치즈 / 그랩 가능<br><br>※ 구글맵에서 "Asma Roti, Santitham, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Asma Roti, Santitham, Chiang Mai</address>
+</Placemark>
+<Placemark><name>미슐랭 어묵국수 (와로롯 근처)</name><description>에그누들면 추천 / 작은 사이즈 시키면 후회<br><br>※ 구글맵에서 "Fish ball noodle Warorot, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Fish ball noodle Warorot, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>밤</name>
+<Placemark><name>The Mellowship Jazz Club</name><description>제대로 된 재즈 클럽 / 화~일 17-24시, 월요일 휴무 / 음악 20시~</description><styleUrl>#s3</styleUrl>
+<Point><coordinates>98.960061,18.805689,0</coordinates></Point>
+</Placemark>
+<Placemark><name>모먼츠 (Moments)</name><description>재즈바 / 분위기 좋다는 후기</description><styleUrl>#s3</styleUrl>
+<Point><coordinates>98.993526,18.786147,0</coordinates></Point>
+</Placemark>
+<Placemark><name>색소폰펍</name><description>라이브 / 최애라는 후기<br><br>※ 구글맵에서 "Saxophone Pub, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>Saxophone Pub, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Sound Up CMI</name><description>테크노·EDM / 토요일 / 게이 프렌들리<br><br>※ 구글맵에서 "Sound Up CMI, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>Sound Up CMI, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Adam&#x27;s Apple Club</name><description>⚠️ 남성 고고클럽 + 스트립쇼에 드래그 코너 / 여성 환영이지만 불편할 수 있음 / 무료 입장<br><br>※ 구글맵에서 "Adams Apple Club, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>Adams Apple Club, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Chiang Mai Cabaret Show</name><description>관광객용 레이디보이 레뷰 / 390~500밧 / 21:30 시작 / 선정적이지 않아 안전<br><br>※ 구글맵에서 "Chiang Mai Cabaret Show, Anusarn, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>Chiang Mai Cabaret Show, Anusarn, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>쇼핑</name>
+<Placemark><name>딥디바인더</name><description>감성 문구·소품 / 마그넷 260밧<br><br>※ 구글맵에서 "Deep Divinder, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Deep Divinder, Chiang Mai</address>
+</Placemark>
+<Placemark><name>forest and friends</name><description>스티커 / 키티파닛 건너편<br><br>※ 구글맵에서 "Forest and Friends, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Forest and Friends, Chiang Mai</address>
+</Placemark>
+<Placemark><name>사라디자인 (살라)</name><description>물결 치앙마이 티셔츠 / 님만 Think Park 안쪽<br><br>※ 구글맵에서 "Sala Design, Think Park, Nimman, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Sala Design, Think Park, Nimman, Chiang Mai</address>
+</Placemark>
+<Placemark><name>이너프포라이프</name><description>유리공예 느낌 컵<br><br>※ 구글맵에서 "Enough for Life, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Enough for Life, Chiang Mai</address>
+</Placemark>
+<Placemark><name>치앙마이 코스메틱</name><description>도브 노란통 스크럽 195밧 / 트리트먼트·선크림<br><br>※ 구글맵에서 "Chiang Mai Cosmetic, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Chiang Mai Cosmetic, Chiang Mai</address>
+</Placemark>
+<Placemark><name>WIN 코스메틱 (와로롯)</name><description>하이젠·바이오 트리트먼트 제일 쌈<br><br>※ 구글맵에서 "Win Cosmetic Warorot, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Win Cosmetic Warorot, Chiang Mai</address>
+</Placemark>
+<Placemark><name>센트럴 페스티벌</name><description>사와디 티셔츠(1층 H&amp;M 앞) / 짐톰슨 / MITH·Journal 지점</description><styleUrl>#s4</styleUrl>
+<Point><coordinates>99.018215,18.807402,0</coordinates></Point>
+</Placemark>
+<Placemark><name>센트럴 에어포트</name><description>왓슨스 치약 1+1 / 허그크래프트(1500밧 이상 사은품) / 해리포터 쏠팅햇 109밧</description><styleUrl>#s4</styleUrl>
+<Point><coordinates>98.974472,18.768271,0</coordinates></Point>
+</Placemark>
+<Placemark><name>빅씨 엑스트라</name><description>과자·치약 대량 / 3000밧 넘으면 여권 필요</description><styleUrl>#s4</styleUrl>
+<Point><coordinates>99.022291,18.798332,0</coordinates></Point>
+</Placemark>
+<Placemark><name>림핑 슈퍼마켓</name><description>고급 슈퍼 / 수입식품·선물용 간식·수끼소스</description><styleUrl>#s4</styleUrl>
+<Point><coordinates>98.9772,18.771779,0</coordinates></Point>
+</Placemark>
+<Placemark><name>나나정글 마켓</name><description>빵 마켓 / 취향 아니라 빈손이었다는 후기도<br><br>※ 구글맵에서 "Nana Jungle Market, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Nana Jungle Market, Chiang Mai</address>
+</Placemark>
+<Placemark><name>코코넛 마켓</name><description>징짜이·토요마켓보다 좋다는 평 / 일찍 가면 한적<br><br>※ 구글맵에서 "Coconut Market, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Coconut Market, Chiang Mai</address>
+</Placemark>
+<Placemark><name>치앙마이게이트 야시장</name><description>매일 / 현지인 먹거리 중심</description><styleUrl>#s4</styleUrl>
+<Point><coordinates>98.98862,18.781365,0</coordinates></Point>
+</Placemark>
+<Placemark><name>100밧샵 (원님만 건너편)</name><description>코끼리 인형 등 저가 기념품</description><styleUrl>#s4</styleUrl>
+<Point><coordinates>98.968073,18.800126,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>액티비티</name>
+<Placemark><name>라일라 요가 스튜디오</name><description>모닝요가 만족도 높음 / 젠틀플로우는 거의 스트레칭 / 350밧 / 요가복·매트도 팜<br><br>※ 구글맵에서 "Laila Yoga Studio, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Laila Yoga Studio, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Dang Muay Thai Gym</name><description>무에타이 원데이 439밧 / 인스타·클룩·워크인<br><br>※ 구글맵에서 "Dang Muay Thai Gym, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Dang Muay Thai Gym, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Mitt Studio 도예</name><description>원데이 도예 존잼 / 인스타 DM 예약 / 배송 문의는 답 느림<br><br>※ 구글맵에서 "Mitt Studio, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Mitt Studio, Chiang Mai</address>
+</Placemark>
+<Placemark><name>마마노이 쿠킹클래스</name><description>에어컨 있어 11월에 유리 / 그랜마가 더 유명하지만 에어컨 없음<br><br>※ 구글맵에서 "Mama Noi Thai Cookery School, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Mama Noi Thai Cookery School, Chiang Mai</address>
+</Placemark>
+<Placemark><name>그랜마 쿠킹클래스</name><description>제일 유명 / 에어컨 없어서 더위 주의<br><br>※ 구글맵에서 "Grandma Thai Cooking School, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Grandma Thai Cooking School, Chiang Mai</address>
+</Placemark>
+<Placemark><name>ENP 코끼리 자연공원</name><description>코끼리 보호소 / 2000~3500밧으로 비싼 편 / 반나절 vs 종일</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.861639,19.214683,0</coordinates></Point>
+</Placemark>
+<Placemark><name>도이인타논 국립공원</name><description>트래킹 투어 좋았다는 후기 / 추우니 겉옷<br><br>※ 구글맵에서 "Doi Inthanon National Park" 검색</description><styleUrl>#s5</styleUrl>
+<address>Doi Inthanon National Park</address>
+</Placemark>
+<Placemark><name>도이수텝</name><description>제일 유명한데 비추 의견도 많음 — 사원 많이 본 사람은 감흥 적고 왕복 시간 아깝다는 평<br><br>※ 구글맵에서 "Wat Phra That Doi Suthep, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Wat Phra That Doi Suthep, Chiang Mai</address>
+</Placemark>
+<Placemark><name>반캉왓 예술가 마을</name><description>공방·소품샵 모인 마을 / 한적</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.948264,18.77675,0</coordinates></Point>
+</Placemark>
+<Placemark><name>왓우몽</name><description>숲속 터널 사원 / 사원 강아지로 유명</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.952579,18.783103,0</coordinates></Point>
+</Placemark>
+<Placemark><name>왓프라싱</name><description>올드타운 대표 사원 / 축제 때 장식</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.981377,18.788207,0</coordinates></Point>
+</Placemark>
+<Placemark><name>호수공원 (P.A.O.)</name><description>현지인 호수공원 / 5시에 미니 먹거리 야시장 / 올공+석촌호수 느낌<br><br>※ 구글맵에서 "Chiang Mai P.A.O. Public Park" 검색</description><styleUrl>#s5</styleUrl>
+<address>Chiang Mai P.A.O. Public Park</address>
+</Placemark>
+<Placemark><name>나카라 스튜디오</name><description>사진 스튜디오 / 보정본 1~5일<br><br>※ 구글맵에서 "Nakara Studio, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Nakara Studio, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>카페</name>
+<Placemark><name>캄빌리지 (Kalm Village)</name><description>올드타운 / 느좋 / 저녁 요가도 함 (겉옷 필수, 엄청 추움)</description><styleUrl>#s6</styleUrl>
+<Point><coordinates>98.986463,18.783523,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Cool Muang</name><description>타패게이트 바로 앞 / 멍때리기 좋음 / 아이스라떼<br><br>※ 구글맵에서 "Cool Muang, Tha Phae, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>Cool Muang, Tha Phae, Chiang Mai</address>
+</Placemark>
+<Placemark><name>그라프 그라운드 (님만)</name><description>조명 어둡지만 아늑<br><br>※ 구글맵에서 "Graph Ground, Nimman, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>Graph Ground, Nimman, Chiang Mai</address>
+</Placemark>
+<Placemark><name>기빙트리 산티탐점</name><description>본점보다 좋다는 평 / 신상이라 쾌적<br><br>※ 구글맵에서 "Giving Tree Santitham, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>Giving Tree Santitham, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Fohhide</name><description>구름 전망 좋은 카페</description><styleUrl>#s6</styleUrl>
+<Point><coordinates>98.968632,18.798748,0</coordinates></Point>
+</Placemark>
+<Placemark><name>바트커피</name><description>더티커피 유명한데 호불호 / 솔드아웃·휴무 잦음 / 덥다는 평도<br><br>※ 구글맵에서 "Bart Coffee, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>Bart Coffee, Chiang Mai</address>
+</Placemark>
+<Placemark><name>애프터유</name><description>빙수 체인 / 치앙마이에도 있음<br><br>※ 구글맵에서 "After You, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>After You, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Monday Attack</name><description>언니네일 근처 분위기 좋은 카페<br><br>※ 구글맵에서 "Monday Attack, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>Monday Attack, Chiang Mai</address>
+</Placemark>
+</Folder>
+</Document></kml>
