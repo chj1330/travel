@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
 :root{
   --paper:#FFFFFF;
@@ -184,6 +185,29 @@ td.time{font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap
 .pack label:has(input:checked){opacity:.45}
 .pack label:has(input:checked) span{text-decoration:line-through}
 
+/* ---------- map ---------- */
+.daybtns{display:flex;gap:7px;overflow-x:auto;padding-bottom:12px;scrollbar-width:none}
+.daybtns::-webkit-scrollbar{display:none}
+.daybtns button{
+  flex:none;font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;
+  border:1px solid var(--line2);background:var(--paper);color:var(--ink2);
+  border-radius:999px;padding:7px 15px;cursor:pointer;
+}
+.daybtns button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+#leaf{height:380px;border-radius:var(--r);border:1px solid var(--line2);overflow:hidden;background:var(--panel2)}
+#dayline{font-size:13.5px;color:var(--ink2);margin:12px 0 0;line-height:1.6;min-height:22px}
+.leaflet-popup-content{margin:11px 13px;font-family:"IBM Plex Sans KR",sans-serif;font-size:13.5px;line-height:1.5}
+.leaflet-popup-content b{display:block;font-size:14.5px;margin-bottom:3px}
+.leaflet-popup-content a{color:var(--jade);font-weight:600;font-size:12.5px;text-decoration:none}
+.leaflet-container{font-family:"IBM Plex Sans KR",sans-serif}
+.numpin{
+  background:var(--ink);color:#fff;border-radius:50%;width:26px;height:26px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;
+  border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35);
+}
+.dotpin{width:13px;height:13px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+
 footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:center;line-height:1.75}
 
 @media (max-width:420px){
@@ -197,6 +221,7 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
 
 <nav>
   <div class="navrow">
+    <a href="#map">지도</a>
     <a href="#pick">같이 정할 것</a>
     <a href="#plan">날짜별</a>
     <a href="#cad">11/25 콤로이</a>
@@ -233,16 +258,41 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <p>치앙마이시 공식 발표 기준이야. 영어 여행 사이트들은 날짜를 틀리게 적고 있어.</p>
   </div>
 
-  <div class="alert red">
-    <h3>11/25에 대형 퍼레이드가 있는데, 우리는 콤로이 가 있어</h3>
-    <p>2026년 공식 일정상 <b>11/24(화)가 러이끄라통 보름 본날</b>, <b>11/25(수)가 “완끄라통야이” — 왕실컵 26개 행렬 대형 퍼레이드</b> 날이야. 퍼레이드는 타패게이트에서 출발해 시청까지 가는데, 2025년엔 18:30 출발이었어.</p>
-    <p>그런데 그날 우리는 <b>13:30에 콤로이 셔틀</b>을 타. 퍼레이드는 사실상 못 봐. 다만 복귀 1회차(21:00)를 타면 21:45쯤 생타완에 내리는데 퍼레이드 경로가 그 근처라 <b>꼬리는 볼 수도</b> 있어.</p>
+  <div class="alert gold">
+    <h3>사흘 밤이 전부 달라 — 그리고 25일엔 퍼레이드도 노려볼 수 있어</h3>
+    <p><b>11/23</b> 왓 쩨디루앙 촛불 행렬 (조용하고 예쁜 밤) · <b>11/24</b> 핑강에서 끄라통 직접 띄우기 (우리가 하는 것, 숙소 바로 앞) · <b>11/25</b> 콤로이 + <b>왕실컵 대형 퍼레이드</b>.</p>
+    <p>25일 퍼레이드는 타패게이트에서 출발해 <b>시청에서 끝나는데, 그 끝이 우리가 숙소 가는 길목</b>이야. 콤로이 끝나고 돌아오는 시간이랑 겹칠 수 있어서 <b>조금만 신경 쓰면 볼 수 있어.</b></p>
+    <p style="margin-top:12px"><a class="btn go" href="#parade">퍼레이드 보는 법 ↓</a></p>
   </div>
 
   <div class="alert jade">
     <h3>메인 행사장이 숙소 바로 앞으로 옮겨졌어</h3>
     <p>2026년부터 메인 행사장이 타패게이트 광장에서 <b>똔람야이 시장 공원(핑강변)</b>으로 바뀌었어. 우리 숙소가 핑강 동쪽이라 <b>나와랏 다리만 건너면</b> 거기야. 끄라통 띄우는 구간(나와랏 다리~철교)도 집 앞이고. 24일엔 그랩도 필요 없어.</p>
   </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section id="map">
+  <div class="shead">
+    <h2>지도</h2>
+    <p>날짜를 누르면 그날 동선만 보여. 핀을 누르면 구글맵으로 열 수 있어.</p>
+  </div>
+
+  <div class="daybtns" id="daybtns">
+    <button data-d="all" class="on">전체</button>
+    <button data-d="22">11.22</button>
+    <button data-d="23">11.23</button>
+    <button data-d="24">11.24</button>
+    <button data-d="25">11.25</button>
+    <button data-d="26">11.26</button>
+    <button data-d="27">11.27</button>
+  </div>
+
+  <div id="leaf"></div>
+  <p id="dayline"></p>
+
+  <div class="note">📍 숙소가 <b>핑강 동쪽(왓켓)</b>이라 축제 메인 구역이랑 나이트바자가 전부 도보권이야. 올드타운은 걸어서 20분, 님만은 그랩 15분.</div>
+  <div class="note tip">🏔️ <b>부아통 폭포는 지도 밖</b>이야 — 북쪽으로 60km, 차로 90분. 11/23에 가면 아침에 나갔다가 오후에 돌아오는 일정이 돼.</div>
 </section>
 
 <!-- ============ PICK ============ -->
@@ -426,6 +476,30 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <a class="btn go" href="https://maps.app.goo.gl/GKFutrom2232j2Zq8" target="_blank" rel="noopener">CMECC 지도</a>
     <a class="btn" href="https://faceticket.net/en/manual/guide-for-fit-cad-khomloy-sky-lantern-festival-24-25-november-2026/" target="_blank" rel="noopener">공식 가이드</a>
   </div>
+
+  <h3 id="parade" style="font-size:20px;margin:34px 0 4px">콤로이 끝나고 퍼레이드 꼬리 잡기</h3>
+  <p style="color:var(--ink3);font-size:13.5px;margin:0 0 16px">같은 날 밤에 둘 다 보는 방법. 확정은 아니고 타이밍 싸움인데, 해볼 만해.</p>
+
+  <div class="rhythm">
+    <div class="rh"><div class="t">① 셔틀</div><div>
+      <strong>복귀는 꼭 1회차(21:00)로</strong>
+      <p>2회차(23:00) 타면 퍼레이드는 확실히 끝나 있어. 1회차 타야 21:45쯤 시내에 닿아.</p></div></div>
+    <div class="rh"><div class="t">② 하차</div><div>
+      <strong>탑승 전에 “NIGHT BAZAAR” 선택</strong>
+      <p>마야몰이나 CMECC 고르면 퍼레이드 쪽이랑 완전히 멀어져. 생타완 교차로에 내려야 걸어서 접근돼.</p></div></div>
+    <div class="rh"><div class="t">③ 경로</div><div>
+      <strong>창클란로를 따라 북쪽으로 걸어</strong>
+      <p>퍼레이드는 <b>타패게이트 → 타패로드 → 시청</b> 방향이야. 생타완에서 북쪽으로 올라가면 타패로드랑 만나. 거기가 경로 위야.</p></div></div>
+    <div class="rh"><div class="t">④ 명당</div><div>
+      <strong>끝 지점(시청·나와랏 다리 쪽)을 노려</strong>
+      <p>26개 행렬이 <b>도착해서 마지막 공연</b>을 하는 곳이야. 게다가 우리가 숙소 가려고 어차피 건너는 다리 바로 옆이라 동선이 겹쳐. 늦게 도착할수록 이쪽이 유리해.</p></div></div>
+    <div class="rh"><div class="t">⑤ 못 보면</div><div>
+      <strong>타패로드 장식이랑 빛 전시는 남아 있어</strong>
+      <p>23~25일 내내 하는 거라 퍼레이드가 끝났어도 거리랑 타패게이트 광장은 볼 수 있어. 밤늦게까지 하는 발마사지로 마무리해도 좋고.</p></div></div>
+  </div>
+
+  <div class="note">⏱️ <b>시간 감각:</b> 2025년엔 18:30에 출발했어. 26개 행렬이면 꼬리가 지나가는 데 몇 시간 걸려서 <b>21:30~22:30에도 움직이고 있을 가능성이 꽤 있어.</b> 2026년 공식 시각은 아직 발표 전이라 출발 직전에 치앙마이시 페이스북 확인하자.</div>
+  <div class="note tip">🍜 서두르지 말자. 생타완~타패로드 사이에 먹을 데가 많아서 <b>늦은 저녁 먹으면서 기다리다가</b> 행렬 소리 들리면 나가면 돼.</div>
 </section>
 
 <!-- ============ FESTIVAL ============ -->
@@ -860,6 +934,94 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
 </footer>
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function(){
+  if(!window.L) return;
+  var C={base:'#14171E',fest:'#956005',night:'#A62E52',eat:'#2A54A0',body:'#11654F',shop:'#6B4FA0',fun:'#B0640B'};
+  var P={
+    hotel:{n:'숙소 · 푸리푼 하이드웨이',x:18.7886,y:99.0069,c:'base',d:'왓켓 · 핑강 동쪽'},
+    airport:{n:'치앙마이 공항',x:18.7668,y:98.9649,c:'base',d:'숙소까지 15분'},
+    nb:{n:'나이트바자',x:18.7844,y:99.0004,c:'shop',d:'매일 · 숙소 도보 9분 · 11/25 하차 구역도 이 근처'},
+    warorot:{n:'와로롯 시장',x:18.7902,y:99.0005,c:'shop',d:'숙소 도보권 재래시장'},
+    tonlamyai:{n:'똔람야이 공원 · 축제 메인',x:18.7905,y:99.0013,c:'fest',d:'2026년 메인 행사장 · 다리만 건너면 됨'},
+    nawarat:{n:'나와랏 다리 · 끄라통 띄우기',x:18.7876,y:99.0044,c:'fest',d:'강 전망 최고의 무료 포인트'},
+    iron:{n:'철교 (쿠아렉)',x:18.7840,y:99.0046,c:'fest',d:'끄라통 띄우는 구간 끝'},
+    thapae:{n:'타패게이트',x:18.7878,y:98.9933,c:'fest',d:'11/24는 18:00 전 도착 · 11/25 퍼레이드 출발점'},
+    chedi:{n:'왓 쩨디루앙',x:18.7871,y:98.9868,c:'fest',d:'11/23 촛불 행렬이 여기로'},
+    phantao:{n:'왓 판따오',x:18.7878,y:98.9874,c:'fest',d:'17:30 도착 · 사진 제일 잘 나옴'},
+    cmecc:{n:'CMECC · 콤로이 탑승장',x:18.8268,y:98.9614,c:'fest',d:'11/25 12:30 숙소 출발 → 13:00 도착'},
+    northgate:{n:'North Gate Jazz',x:18.7952,y:98.9870,c:'night',d:'매일 · 19:45까지 도착'},
+    sapphic:{n:'Sapphic Riot',x:18.7946,y:98.9819,c:'night',d:'19:00–24:00 · 월·화 휴무 가능'},
+    onenimman:{n:'원님만 (BLOW CNX 근처)',x:18.8001,y:98.9681,c:'shop',d:'향수 쇼핑 · 님만 중심'},
+    maya:{n:'마야몰',x:18.8024,y:98.9673,c:'shop',d:'쇼핑 · 푸드코트'},
+    jingjai:{n:'징짜이 마켓',x:18.8081,y:98.9949,c:'shop',d:'블루누들 징짜이점'},
+    looper:{n:'Looper 수영장 + 온천',x:18.8130,y:98.9649,c:'body',d:'250~300밧 · 07:00–21:00'},
+    nongbuak:{n:'농부악 공원',x:18.7822,y:98.9802,c:'body',d:'아침요가 · 러닝'},
+    station:{n:'치앙마이역 공원',x:18.7823,y:99.0170,c:'body',d:'숙소 도보권 러닝 코스'},
+    green:{n:'Green Bamboo 똑센',x:18.7829,y:98.9919,c:'body',d:'1시간 400밧'},
+    fah:{n:'Fah Lanna Spa 똑센',x:18.7930,y:98.9860,c:'body',d:'1시간 1,600밧 · 12:00 오픈'},
+    artistic:{n:'Artistic Lab 향수공방',x:18.8115,y:98.9787,c:'fun',d:'390~590밧 · 수요일 휴무'},
+    changphueak:{n:'창푸악 게이트 · 야시장',x:18.7954,y:98.9866,c:'eat',d:'매일 밤 12시까지'}
+  };
+  var DAYS={
+    '22':{r:['airport','hotel','nb'],t:'도착 → 체크인 → 나이트바자. 축제 인파 오기 전 유일한 날.'},
+    '23':{r:['hotel','chedi','northgate'],t:'아침엔 부아통 폭포(지도 밖, 북쪽 60km). 저녁 17:00 촛불 행렬 → 밤엔 재즈.'},
+    '24':{r:['hotel','phantao','thapae','nawarat','hotel'],t:'러이끄라통 본날. 전부 걸어서 돌 수 있어 — 그랩 필요 없어.'},
+    '25':{r:['hotel','cmecc','nb','hotel'],t:'12:30 출발 → CMECC에서 셔틀 → 21:45 나이트바자 하차 → 걸어서 숙소.'},
+    '26':{r:['hotel','looper','green','onenimman'],t:'수영+온천 또는 무에타이 → 똑센 마사지 → 밤엔 님만.'},
+    '27':{r:['hotel','maya','fah','airport'],t:'체크아웃·짐 맡기고 쇼핑 → 마지막 마사지 → 공항.'}
+  };
+
+  var map=L.map('leaf',{scrollWheelZoom:false}).setView([18.795,98.995],13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    maxZoom:18, attribution:'&copy; OpenStreetMap'
+  }).addTo(map);
+
+  var layer=L.layerGroup().addTo(map);
+  function gmap(p){return 'https://www.google.com/maps/search/?api=1&query='+p.x+','+p.y;}
+
+  function draw(day){
+    layer.clearLayers();
+    var keys, line=null;
+    if(day==='all'){ keys=Object.keys(P); }
+    else { keys=DAYS[day].r.filter(function(k,i,a){return a.indexOf(k)===i;}); }
+
+    if(day!=='all'){
+      var pts=DAYS[day].r.map(function(k){return [P[k].x,P[k].y];});
+      line=L.polyline(pts,{color:'#14171E',weight:2.5,opacity:.5,dashArray:'6,7'}).addTo(layer);
+    }
+
+    var order={};
+    if(day!=='all'){ DAYS[day].r.forEach(function(k,i){ if(!(k in order)) order[k]=i+1; }); }
+
+    keys.forEach(function(k){
+      var p=P[k], icon;
+      if(day!=='all'){
+        icon=L.divIcon({className:'',html:'<div class="numpin" style="background:'+C[p.c]+'">'+order[k]+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+      }else{
+        icon=L.divIcon({className:'',html:'<div class="dotpin" style="background:'+C[p.c]+'"></div>',iconSize:[13,13],iconAnchor:[7,7]});
+      }
+      L.marker([p.x,p.y],{icon:icon}).addTo(layer)
+        .bindPopup('<b>'+p.n+'</b>'+(p.d?p.d+'<br>':'')+'<a href="'+gmap(p)+'" target="_blank" rel="noopener">구글맵으로 열기 →</a>');
+    });
+
+    var bounds = line ? line.getBounds() : L.latLngBounds(keys.map(function(k){return [P[k].x,P[k].y];}));
+    map.fitBounds(bounds,{padding:[38,38],maxZoom:15});
+    document.getElementById('dayline').textContent = day==='all' ? '' : DAYS[day].t;
+  }
+
+  draw('all');
+  document.getElementById('daybtns').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    this.querySelectorAll('button').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    draw(b.dataset.d);
+  });
+  map.on('click',function(){ map.scrollWheelZoom.enable(); });
+})();
+</script>
 
 <script>
 (function(){
