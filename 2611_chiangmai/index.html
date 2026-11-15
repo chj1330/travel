@@ -208,6 +208,18 @@ td.time{font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap
 }
 .dotpin{width:13px;height:13px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)}
 
+.dm{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden}
+.dm summary{cursor:pointer;padding:13px 16px;font-size:14.5px;font-weight:600;list-style:none;display:flex;gap:9px;align-items:baseline}
+.dm summary::-webkit-details-marker{display:none}
+.dm summary::after{content:"＋";margin-left:auto;color:var(--ink3);font-weight:400}
+.dm[open] summary::after{content:"−"}
+.dm summary small{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink3);font-weight:500}
+.dm .body{padding:0 16px 15px}
+.dm pre{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:13px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;
+  white-space:pre-wrap;word-break:break-word;margin:0;color:var(--ink)}
+.dm .how{font-size:12.5px;color:var(--ink2);margin:0 0 9px;line-height:1.6}
+
 footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:center;line-height:1.75}
 
 @media (max-width:420px){
@@ -357,6 +369,114 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <label><input type="checkbox" id="t18"><span><b>CAD 운영사에 픽업 위치 재확인</b> — 축제 때문에 당일 바뀔 수 있어</span></label>
   </div>
 
+  <h3 style="font-size:17px;margin:30px 0 4px">DM·메일 문구</h3>
+  <p style="color:var(--ink3);font-size:13.5px;margin:0 0 14px">전부 <b>영어로 보내면 돼.</b> 태국 가게들은 영어 DM에 익숙하고, 안 되면 번역기로 답장 와. 눌러서 펼친 다음 복사해서 쓰면 돼.</p>
+
+  <details class="dm"><summary>🔖 식크릿쇼 — 테이블 예약 <small>인스타 DM</small></summary>
+    <div class="body">
+      <p class="how">@6ixcretshow 인스타 DM, 또는 +66 98 298 3958</p>
+      <pre>Hi! We'd like to book a table for 2 people for the show on Thursday, 26 November.
+
+Is the show on that night? What time should we arrive to get a table?
+
+Thank you!</pre>
+    </div></details>
+
+  <details class="dm"><summary>🔖 Fah Lanna — 똑센 커플 예약 <small>LINE @fahlannaspa</small></summary>
+    <div class="body">
+      <p class="how">LINE에서 <b>@fahlannaspa</b> 검색 (@ 포함). 또는 WhatsApp +66 88 804 9984</p>
+      <pre>Hello! We'd like to book Tok Sen massage for 2 people.
+
+Date: Thursday, 26 November
+Time: around 3:00 pm
+Course: Tok Sen, 1 hour each
+Branch: Old City (Wiang Kaew Road)
+
+Could we please have both beds in the same room? We are a couple.
+
+Thank you!</pre>
+    </div></details>
+
+  <details class="dm"><summary>📞 Sapphic Riot — 영업일 확인 <small>페이스북 DM / 전화</small></summary>
+    <div class="body">
+      <p class="how">페이스북 페이지 DM, 또는 +66 96 429 5692</p>
+      <pre>Hi! We're visiting Chiang Mai from 22 to 27 November.
+
+Are you open on Wednesday 25 and Thursday 26? What time do you open and close?
+
+Also, is there any event on those nights?
+
+Thank you!</pre>
+    </div></details>
+
+  <details class="dm"><summary>📞 Artistic Lab — 향수 공방 <small>인스타 DM</small></summary>
+    <div class="body">
+      <p class="how">@artistic.lab 인스타 DM, 또는 081-568-2255</p>
+      <pre>Hello! We'd like to make our own perfume.
+
+Date: Tuesday, 24 November
+Time: around 10:30 am
+2 people, 10ml bottles
+
+Do we need a reservation, or can we walk in?
+Is English OK for the session?
+
+Thank you!</pre>
+    </div></details>
+
+  <details class="dm"><summary>📧 호텔 — 차량·조식·짐 보관 <small>rsvn@puripunn.com</small></summary>
+    <div class="body">
+      <p class="how">예약 번호를 같이 적으면 더 빨라. 한 번에 다 물어보는 게 편해.</p>
+      <pre>Dear Puripunn Hideaway,
+
+We have a booking for a Superior Room, 22-27 November, 2 guests.
+(Booking reference: [예약번호])
+
+Could you help us with a few things?
+
+1. CAR ON 25 NOVEMBER
+We need a car on Wednesday 25 November, leaving the hotel at 12:30 pm,
+to the Chiang Mai International Exhibition and Convention Centre
+(near the 700th Anniversary Stadium). How much would it cost?
+
+2. CAR TO BUA TONG WATERFALL
+We'd also like a half-day car with driver to Bua Tong Sticky Waterfall
+on Monday 23 November, leaving around 7:00 am and returning in the
+early afternoon. How much would it cost?
+
+3. BREAKFAST
+Our rate does not include breakfast. We'd like to add it for
+2 people on 25 November only. Is that possible, and what is the price?
+
+4. LUGGAGE ON OUR LAST DAY
+On 27 November we check out in the morning, but our flight is at
+10:15 pm. Can we store our luggage at the hotel until the evening?
+
+Thank you very much!</pre>
+    </div></details>
+
+  <details class="dm"><summary>💬 현지에서 쓸 짧은 말 <small>택시·가게</small></summary>
+    <div class="body">
+      <p class="how">그랩 기사한테 주소가 안 통할 때, 가게에서 물어볼 때.</p>
+      <pre>CMECC 갈 때 (기사에게)
+→ "Jet Roi Pi"  (เจ็ดร้อยปี = 700주년 경기장)
+
+숙소 갈 때
+→ "Wat Ket, Charoen Muang Soi 2"
+
+맵 보여주기
+→ "Can you take me here?" (+ 구글맵 화면)
+
+마사지 세게/약하게
+→ "Soft, please" / "Strong, please"
+
+덜 맵게
+→ "Not spicy, please"  (= "Mai phet")
+
+세븐일레븐에서 몬치치
+→ "Monchhichi, please?"</pre>
+    </div></details>
+
   <div class="note warn">🔖 <b>예약 안 하면 못 하는 것:</b> 식크릿쇼(테이블), Fah Lanna 똑센, 부아통 차량.<br>
   <b>예약 없이 그냥 가도 되는 것:</b> 무에타이(워크인), Looper(워크인), North Gate Jazz(예약 자체가 안 됨), Green Bamboo(당일 전화), Artistic Lab(워크인 환영).</div>
 </section>
@@ -453,7 +573,7 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
   <div class="day cad">
     <div class="dh"><span class="dnum">11.25</span><span class="dow">수요일</span><span class="dtag">콤로이</span></div>
     <ul>
-      <li><span class="lt">09:00</span><span>🥐 아침 — <b>Woo Cafe</b>나 <b>Natwat Home Café</b>(둘 다 왓켓). 오늘은 숙소 근처만, 동네가 조용하고 예뻐</span></li>
+      <li><span class="lt">09:00</span><span>🍳 <b>호텔 조식 하는 날</b>(1인 700밧) — 오늘이 아침 비는 유일한 날이야. 아니면 <b>Woo Cafe</b>나 <b>Natwat Home Café</b></span></li>
       <li><span class="lt">11:30</span><span>🍽️ 가볍게 점심 — 행사장에서 저녁 나오니까 많이 먹지 말자</span></li>
       <li><span class="lt">12:30</span><span>숙소 출발 → CMECC</span></li>
       <li><span class="lt">13:00</span><span>CMECC 도착 (줄번호 마감 14:30)</span></li>
@@ -471,7 +591,7 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
       <li><span class="lt">11:00</span><span>💪 <b>무에타이 원데이</b> (410~440밧, 워크인) — 아니면 <span class="chip ask">정할 것</span> <b>Looper 수영+온천</b></span></li>
       <li><span class="lt">13:00</span><span>🍲 무에타이 갔으면 근처 <b>창푸악 수끼</b>, Looper 갔으면 2층 카페에서 간단히</span></li>
       <li><span class="lt">15:00</span><span>💆 <b>Fah Lanna 똑센</b> (12시 오픈) 또는 <b>Green Bamboo</b>(400밧) — 운동하고 받으면 딱이야</span></li>
-      <li><span class="lt">18:00</span><span>🥞 님만으로 → <b>Rogu Roti</b> 로띠. 🛍️ <b>원님만</b>에서 하이젠·생일머그, <b>Think Park 안쪽 사라디자인</b>에서 물결 치앙마이 티. 머리 감고 싶으면 <b>Porjai 헤어워시</b>도 님만이야</span></li>
+      <li><span class="lt">18:00</span><span>🥞 님만으로 → <b>Rogu Roti</b> 로띠. 🛍️ <b>원님만</b>에서 하이젠·생일머그·<b>SOAP FOR SOUL 비누</b>(21시까지), <b>Think Park 안쪽 사라디자인</b>에서 물결 치앙마이 티. 머리 감고 싶으면 <b>Porjai 헤어워시</b>도 님만이야</span></li>
       <li><span class="lt">21:00</span><span>🏳️‍🌈 <b>BLOW CNX</b> 드래그쇼 (목요일이 쇼 하는 날, 님만 Soi 5) 또는 <b>식크릿쇼</b>(나이트바자)</span></li>
     </ul>
   </div>
@@ -480,7 +600,7 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <div class="dh"><span class="dnum">11.27</span><span class="dow">금요일</span><span class="dtag" style="background:var(--panel2);color:var(--ink3)">마지막</span></div>
     <ul>
       <li><span class="lt">오전</span><span>🥐 근처에서 마지막 아침 → 체크아웃 → <b>호텔에 짐 맡기기</b> (며칠도 맡아준대)</span></li>
-      <li><span class="lt">11:00</span><span>🛍️ 님만 — <b>MITH</b>(Soi 3) + <b>Journal</b>(원님만) 향수, 마야몰에서 못 산 것 마무리</span></li>
+      <li><span class="lt">11:00</span><span>🛍️ <b>원님만</b>에서 한 번에 — <b>SOAP FOR SOUL</b> 비누(1층 OneStreet, 도시 이름 비누) + <b>Journal</b> 향수. 그다음 <b>MITH</b>(Soi 3), 마야몰에서 마무리</span></li>
       <li><span class="lt">13:00</span><span>🍽️ 마야몰 푸드코트나 님만에서 점심</span></li>
       <li><span class="lt">14:30</span><span>🏊‍♀️ <b>Looper</b>에서 수영+온천 하고 <b>거기서 샤워</b> — 님만에서 차로 10분이라 묶기 좋아</span></li>
       <li><span class="lt">18:00</span><span>💆 숙소 근처에서 마지막 마사지 → 짐 찾기</span></li>
@@ -771,8 +891,9 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
   </div>
 
   <h3 style="font-size:19px;margin:30px 0 4px">아침 — 숙소 근처 (왓켓)</h3>
-  <p style="color:var(--ink3);font-size:13.5px;margin:0 0 14px"><b>우리 요금엔 조식이 안 들어 있어.</b> 그래서 매일 아침 나가서 먹어야 해 — 다행히 왓켓 동네에 괜찮은 데가 있어.<br>
-  (호텔 조식을 <b>현장에서 추가</b>할 수도 있어. 리뷰 평은 좋은 편이고 계란을 즉석으로 부쳐준대. 가격은 체크인 때 물어보자.)</p>
+  <p style="color:var(--ink3);font-size:13.5px;margin:0 0 14px"><b>우리 요금엔 조식이 안 들어 있어.</b> 호텔 조식은 <b>1인 700밧</b>이라 둘이 1,400밧 — 치앙마이 물가로는 비싼 편이야(똑센 마사지 1시간이 400밧). 그래서 기본은 밖에서 먹는 걸로.</p>
+  <div class="note tip" style="margin:0 0 16px">🍳 <b>딱 하루만 호텔 조식을 한다면 11/25(수).</b> 그날이 아침이 통으로 비는 유일한 날이야 — 콤로이 때문에 12:30에 나가야 해서 멀리 못 가고, 낮에 체력도 아껴야 하거든. 정원에서 느긋하게 먹고 바로 방 들어가서 쉬면 딱이야. 리뷰는 계란 즉석 코너가 좋다는 평이 많아(종류는 많지 않대).<br>
+  나머지 날은 — 23일 폭포로 일찍 나감, 24·26일 아침 러닝, 27일 체크아웃이라 바빠.</div>
   <div class="places">
     <div class="p"><div class="pb">
       <div class="pn">Half.cnx <span class="price">도보</span></div>
@@ -926,6 +1047,12 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
       <div class="pn">태방이 (인형·키링) <span class="price">공항만</span></div>
       <div class="pd">⚠️ <b>시내엔 없고 공항 킹파워 면세점에만</b> 있어. 제일 작은 키링이 350밧이라 비싼 편. 민트색도 킹파워. 마지막날 공항에서 사면 돼.</div>
     </div></div>
+    <div class="p"><div class="pb">
+      <div class="pn">SOAP FOR SOUL 비누 <span class="price">120~150밧</span></div>
+      <div class="pd"><b>도시 이름을 딴 비누</b> — 치앙마이·방콕·파타야가 따로 있어서 다녀온 데를 고르는 재미가 있어. 패키지도 예뻐서 선물로 좋고, 싸서 여러 개 돌리기 좋아. <b>원님만 1층 OneStreet 구역</b>, 11:00–21:00.</div>
+    </div>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&query=Soap+for+Soul+One+Nimman+Chiang+Mai" target="_blank" rel="noopener">지도</a></div>
+
     <div class="p"><div class="pb">
       <div class="pn">마그넷 · 소품 <span class="price">아누산 마켓</span></div>
       <div class="pd"><b>나이트바자 아누산 마켓</b>이 와로롯보다 종류 많아. 숙소 도보 9분. 생일(날짜별) 머그는 원님만 1개 200밧 / 2개 350밧.</div>
