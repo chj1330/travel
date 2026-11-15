@@ -218,6 +218,16 @@ td.time{font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap
 .dm pre{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:13px;
   font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;
   white-space:pre-wrap;word-break:break-word;margin:0;color:var(--ink)}
+.dm .prewrap{position:relative}
+.copybtn{
+  position:absolute;top:8px;right:8px;z-index:2;
+  font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:600;
+  border:1px solid var(--line2);background:var(--paper);color:var(--ink2);
+  border-radius:8px;padding:6px 11px;cursor:pointer;line-height:1;
+}
+.copybtn:hover{border-color:var(--ink);color:var(--ink)}
+.copybtn.done{background:var(--jade);border-color:var(--jade);color:#fff}
+.dm pre{padding-top:38px}
 .dm .how{font-size:12.5px;color:var(--ink2);margin:0 0 9px;line-height:1.6}
 
 footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:center;line-height:1.75}
@@ -1698,6 +1708,34 @@ Thank you very much!</pre>
 </script>
 
 <script>
+(function(){
+  document.querySelectorAll('.dm pre').forEach(function(pre){
+    var wrap=document.createElement('div'); wrap.className='prewrap';
+    pre.parentNode.insertBefore(wrap,pre); wrap.appendChild(pre);
+    var b=document.createElement('button');
+    b.type='button'; b.className='copybtn'; b.textContent='전체 복사';
+    wrap.appendChild(b);
+    b.addEventListener('click',function(){
+      var t=pre.textContent;
+      var ok=function(){
+        b.textContent='복사됨 ✓'; b.classList.add('done');
+        setTimeout(function(){ b.textContent='전체 복사'; b.classList.remove('done'); },1800);
+      };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(t).then(ok,function(){fallback(t,ok);});
+      } else { fallback(t,ok); }
+    });
+  });
+  function fallback(t,ok){
+    var ta=document.createElement('textarea');
+    ta.value=t; ta.setAttribute('readonly','');
+    ta.style.cssText='position:fixed;top:0;left:0;opacity:0';
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0,t.length);
+    try{ document.execCommand('copy'); ok(); }catch(e){ alert('복사가 안 돼요. 길게 눌러서 직접 선택해주세요.'); }
+    document.body.removeChild(ta);
+  }
+})();
+
 (function(){
   var KEY='cnx2611-pack', saved={};
   try{ saved=JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ saved={}; }
