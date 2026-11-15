@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name>치앙마이 — 일정</name>
+<Style id="s0"><IconStyle><color>ff3b30ff</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s1"><IconStyle><color>fff5860b</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s2"><IconStyle><color>ff2fa8ea</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s3"><IconStyle><color>ff7db34f</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s4"><IconStyle><color>ffb3834f</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s5"><IconStyle><color>ffb34fa0</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s6"><IconStyle><color>ff4f7db3</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s7"><IconStyle><color>ff888888</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="s8"><IconStyle><color>ff4fb37d</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Folder><name>기준점</name>
+<Placemark><name>숙소 · 푸리푼 하이드웨이</name><description>왓켓 · 핑강 동쪽</description><styleUrl>#s0</styleUrl>
+<Point><coordinates>99.0069,18.7886,0</coordinates></Point>
+</Placemark>
+<Placemark><name>치앙마이 공항</name><description>숙소까지 15분 · 공항택시 부스 150밧</description><styleUrl>#s0</styleUrl>
+<Point><coordinates>98.9649,18.7668,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>먹기</name>
+<Placemark><name>카오쏘이 매싸이</name><description>08-16시, 일요일 휴무, 2시면 품절 · 타이티 같이</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.793198,18.584039,0</coordinates></Point>
+</Placemark>
+<Placemark><name>창푸악 수끼</name><description>달글 1위 · 국물 없는 버전 · 배달 가능</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.990376,18.805012,0</coordinates></Point>
+</Placemark>
+<Placemark><name>타밍</name><description>족발덮밥 + 곱창국수</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.984832,18.800416,0</coordinates></Point>
+</Placemark>
+<Placemark><name>블루누들 (올드타운)</name><description>갈비국수 · 징짜이점이 더 맛있다는 평</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.9902,18.7875,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Khua Dee Cuisine</name><description>샐러드 한바가지 · 파스타 · 아침메뉴<br><br>※ 구글맵에서 "Khua Dee Cuisine, Phra Sing, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Khua Dee Cuisine, Phra Sing, Chiang Mai</address>
+</Placemark>
+<Placemark><name>JJ Pad Thai</name><description>모닝글로리 튀김 · 팟타이 · 똠얌꿍<br><br>※ 구글맵에서 "JJ Pad Thai, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>JJ Pad Thai, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Parin Home Cooking</name><description>팟카파오 매콤 · 바질튀김 파삭</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.9875,18.7868,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Rodlamun</name><description>에어컨 · 쏨땀 맵기 조절 · 세트메뉴</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.9858,18.7897,0</coordinates></Point>
+</Placemark>
+<Placemark><name>까이양 청더이</name><description>숯불 닭구이 · 품뎅이랑 같이<br><br>※ 구글맵에서 "Kai Yang Cherng Doi, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Kai Yang Cherng Doi, Chiang Mai</address>
+</Placemark>
+<Placemark><name>크루아빠어이</name><description>뿌빳뽕커리 · 현금만<br><br>※ 구글맵에서 "Krua Phor Oil, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Krua Phor Oil, Chiang Mai</address>
+</Placemark>
+<Placemark><name>넘버원 무카타</name><description>태국식 삼겹살 · 둘이 가기 편함<br><br>※ 구글맵에서 "Number One Mookata, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Number One Mookata, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Yumpumajedyod (랭쌥)</name><description>현지인 맛집</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.967114,18.80766,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Rogu Roti (님만 Soi 3)</name><description>로띠 · 새벽 1시까지 · 미니 사이즈 있음<br><br>※ 구글맵에서 "Rogu Roti, Nimman Soi 3, Chiang Mai" 검색</description><styleUrl>#s1</styleUrl>
+<address>Rogu Roti, Nimman Soi 3, Chiang Mai</address>
+</Placemark>
+<Placemark><name>창푸악 게이트 야시장</name><description>매일 밤 12시까지 · 품뎅 15밧</description><styleUrl>#s1</styleUrl>
+<Point><coordinates>98.9866,18.7954,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>몸</name>
+<Placemark><name>MONEY MUAY THAI 2</name><description>410밧 · 워크인 · 코치 4~5명<br><br>※ 구글맵에서 "Money Muay Thai, Huay Kaew Rd, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Money Muay Thai, Huay Kaew Rd, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Krudam Gym</name><description>439밧 · 거의 개인레슨<br><br>※ 구글맵에서 "Krudam Gym, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Krudam Gym, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Looper 수영장 + 온천</name><description>250~300밧 · 40도 온천 + 14도 냉탕 · 07-21시</description><styleUrl>#s2</styleUrl>
+<Point><coordinates>98.9649,18.8130,0</coordinates></Point>
+</Placemark>
+<Placemark><name>앙깨우 저수지</name><description>아침 7시반 러닝 · 저녁 일몰<br><br>※ 구글맵에서 "Ang Kaew Reservoir, Chiang Mai University" 검색</description><styleUrl>#s2</styleUrl>
+<address>Ang Kaew Reservoir, Chiang Mai University</address>
+</Placemark>
+<Placemark><name>치앙마이역 공원</name><description>숙소 도보권 러닝</description><styleUrl>#s2</styleUrl>
+<Point><coordinates>99.0170,18.7823,0</coordinates></Point>
+</Placemark>
+<Placemark><name>농부악 공원</name><description>올드타운 · 아침요가</description><styleUrl>#s2</styleUrl>
+<Point><coordinates>98.9802,18.7822,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Green Bamboo 똑센</name><description>1시간 400밧 · 올드타운 · 현금 선호</description><styleUrl>#s2</styleUrl>
+<Point><coordinates>98.9919,18.7829,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Fah Lanna Spa 님만점</name><description>똑센 1시간 1600밧 · 12시 오픈 · LINE @fahlannaspa<br><br>※ 구글맵에서 "Fah Lanna Spa Nimman Soi 15, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Fah Lanna Spa Nimman Soi 15, Chiang Mai</address>
+</Placemark>
+<Placemark><name>올드타운 발마사지</name><description>누워서 받음 · 늦게까지</description><styleUrl>#s2</styleUrl>
+<Point><coordinates>98.9919,18.7866,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Porjai Express Hair Wash</name><description>머리만 감겨줌 · 샴푸 3번<br><br>※ 구글맵에서 "Porjai Express Hair wash, Nimman, Chiang Mai" 검색</description><styleUrl>#s2</styleUrl>
+<address>Porjai Express Hair wash, Nimman, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>밤</name>
+<Placemark><name>Sapphic Riot</name><description>퀴어 여성 바 · 19-24시 · 월화 휴무 가능</description><styleUrl>#s3</styleUrl>
+<Point><coordinates>98.9819,18.7946,0</coordinates></Point>
+</Placemark>
+<Placemark><name>BLOW CNX</name><description>드래그쇼 목·토 · 커버 없음 · 수요일 휴무<br><br>※ 구글맵에서 "BLOW CNX, Nimman Soi 5, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>BLOW CNX, Nimman Soi 5, Chiang Mai</address>
+</Placemark>
+<Placemark><name>식크릿쇼 (6ixcret)</name><description>나이트바자 건물 2층 · 쇼 21:30 · 무료+음료2잔</description><styleUrl>#s3</styleUrl>
+<Point><coordinates>98.9988,18.7866,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Ram Bar</name><description>카바레 매일 21:45 · 전화 예약 권장</description><styleUrl>#s3</styleUrl>
+<Point><coordinates>99.00291,18.784887,0</coordinates></Point>
+</Placemark>
+<Placemark><name>North Gate Jazz Co-Op</name><description>매일 · 19:45까지 도착 · 커버 없음</description><styleUrl>#s3</styleUrl>
+<Point><coordinates>98.9870,18.7952,0</coordinates></Point>
+</Placemark>
+<Placemark><name>33 Melodic cnx</name><description>밴드바 · 11시부터 헤드뱅잉 · 숙소 근처<br><br>※ 구글맵에서 "33 Melodic cnx, Charoen Muang Rd, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>33 Melodic cnx, Charoen Muang Rd, Chiang Mai</address>
+</Placemark>
+<Placemark><name>MaHoRee City of Music</name><description>란나악기+재즈 · 매일 18:30-24시<br><br>※ 구글맵에서 "MaHoRee City of Music, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>MaHoRee City of Music, Chiang Mai</address>
+</Placemark>
+<Placemark><name>The A Ter</name><description>데이트 1순위 · 예약 가능 · 1인 400-600밧<br><br>※ 구글맵에서 "The A Ter, Charoen Prathet, Chiang Mai" 검색</description><styleUrl>#s3</styleUrl>
+<address>The A Ter, Charoen Prathet, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>생활</name>
+<Placemark><name>LaUN DRY 세탁</name><description>2.5kg 125밧 · 호텔 배달<br><br>※ 구글맵에서 "LaUN DRY, Moon Muang Rd Lane 8, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>LaUN DRY, Moon Muang Rd Lane 8, Chiang Mai</address>
+</Placemark>
+<Placemark><name>카시콘 ATM (초록)</name><description>EXK 출금 수수료 500원 · 세탁소 옆<br><br>※ 구글맵에서 "Ploen Laundry, Moon Muang Soi 3, Chiang Mai" 검색</description><styleUrl>#s4</styleUrl>
+<address>Ploen Laundry, Moon Muang Soi 3, Chiang Mai</address>
+</Placemark>
+</Folder>
+<Folder><name>쇼핑</name>
+<Placemark><name>나이트바자 / 아누산</name><description>매일 · 숙소 도보 9분 · 마그넷 기념품</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>99.0004,18.7844,0</coordinates></Point>
+</Placemark>
+<Placemark><name>와로롯 시장</name><description>도보 10분 · 바이오 트리트먼트 7밧 · 하이젠 제일 쌈</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>99.0005,18.7902,0</coordinates></Point>
+</Placemark>
+<Placemark><name>원님만 (One Nimman)</name><description>SOAP FOR SOUL 비누 · Journal 향수 · 하이젠</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.9681,18.8001,0</coordinates></Point>
+</Placemark>
+<Placemark><name>SOAP FOR SOUL</name><description>도시이름 비누 120-150밧 · 원님만 1층<br><br>※ 구글맵에서 "Soap for Soul, One Nimman, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>Soap for Soul, One Nimman, Chiang Mai</address>
+</Placemark>
+<Placemark><name>MITH Boutique</name><description>향수 · 매일 11-21시 · Soi 1 아님 주의<br><br>※ 구글맵에서 "MITH, Nimmanhaemin Soi 3, Chiang Mai" 검색</description><styleUrl>#s5</styleUrl>
+<address>MITH, Nimmanhaemin Soi 3, Chiang Mai</address>
+</Placemark>
+<Placemark><name>마야몰</name><description>쇼핑 · 푸드코트</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.9673,18.8024,0</coordinates></Point>
+</Placemark>
+<Placemark><name>징짜이 마켓</name><description>수공예 · 블루누들 징짜이점</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.9949,18.8081,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Mini Big C Taewan</name><description>치약</description><styleUrl>#s5</styleUrl>
+<Point><coordinates>98.977472,18.805104,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>액티비티</name>
+<Placemark><name>Artistic Lab 향수공방</name><description>390-590밧 · 10-19시 · 수요일 휴무</description><styleUrl>#s6</styleUrl>
+<Point><coordinates>98.9787,18.8115,0</coordinates></Point>
+</Placemark>
+<Placemark><name>부아통 끈적이 폭포</name><description>북쪽 60km 90분 · 무료 · 08:30 도착 · 맨발<br><br>※ 구글맵에서 "Bua Thong Sticky Waterfall, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>Bua Thong Sticky Waterfall, Chiang Mai</address>
+</Placemark>
+<Placemark><name>밤부 패밀리 마켓 + 왓 시리 돈 문</name><description>차로 30분 · 사원 화려 · 한국인 없음<br><br>※ 구글맵에서 "Wat Sri Don Moon, Saraphi, Chiang Mai" 검색</description><styleUrl>#s6</styleUrl>
+<address>Wat Sri Don Moon, Saraphi, Chiang Mai</address>
+</Placemark>
+<Placemark><name>왓쩬린 (Wat Chet Lin)</name><description>그늘에서 쉬기 좋음</description><styleUrl>#s6</styleUrl>
+<Point><coordinates>98.987872,18.783854,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>축제</name>
+<Placemark><name>CMECC 콤로이 탑승장</name><description>11/25 12:30 숙소 출발 · 기사에겐 &#x27;쩻러이삐&#x27;</description><styleUrl>#s7</styleUrl>
+<Point><coordinates>98.9614,18.8268,0</coordinates></Point>
+</Placemark>
+<Placemark><name>타패게이트</name><description>11/24는 18시 전 도착 · 11/25 퍼레이드 출발점</description><styleUrl>#s7</styleUrl>
+<Point><coordinates>98.9933,18.7878,0</coordinates></Point>
+</Placemark>
+<Placemark><name>나와랏 다리</name><description>끄라통 띄우기 · 강 전망 최고 · 숙소 앞</description><styleUrl>#s7</styleUrl>
+<Point><coordinates>99.0044,18.7876,0</coordinates></Point>
+</Placemark>
+<Placemark><name>철교 (쿠아렉)</name><description>끄라통 띄우는 구간</description><styleUrl>#s7</styleUrl>
+<Point><coordinates>99.0046,18.7840,0</coordinates></Point>
+</Placemark>
+<Placemark><name>똔람야이 공원</name><description>2026 메인 행사장 · 다리 건너면 바로</description><styleUrl>#s7</styleUrl>
+<Point><coordinates>99.0013,18.7905,0</coordinates></Point>
+</Placemark>
+<Placemark><name>왓 쩨디루앙</name><description>11/23 촛불 행렬 종착</description><styleUrl>#s7</styleUrl>
+<Point><coordinates>98.9868,18.7871,0</coordinates></Point>
+</Placemark>
+<Placemark><name>왓 판따오</name><description>17:30 도착 · 사진 명당</description><styleUrl>#s7</styleUrl>
+<Point><coordinates>98.9874,18.7878,0</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>카페·아침</name>
+<Placemark><name>Woo Cafe &amp; Art Gallery</name><description>왓켓 · 숙소 도보 10분 · 브런치</description><styleUrl>#s8</styleUrl>
+<Point><coordinates>99.0027,18.7917,0</coordinates></Point>
+</Placemark>
+<Placemark><name>Half.cnx</name><description>숙소 같은 길 · 분위기 좋음<br><br>※ 구글맵에서 "Half.cnx, Charoen Muang Rd, Chiang Mai" 검색</description><styleUrl>#s8</styleUrl>
+<address>Half.cnx, Charoen Muang Rd, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Natwat Home Cafe</name><description>왓켓 · 서양식 아침 · 08:30-16:30<br><br>※ 구글맵에서 "Natwat Home Cafe, Chiang Mai" 검색</description><styleUrl>#s8</styleUrl>
+<address>Natwat Home Cafe, Chiang Mai</address>
+</Placemark>
+<Placemark><name>아르르 (Arrr / 아르밋)</name><description>오렌지커피 원조 · 디카페인 있음 · 수요일 휴무<br><br>※ 구글맵에서 "Arrr coffee, Chiang Mai" 검색</description><styleUrl>#s8</styleUrl>
+<address>Arrr coffee, Chiang Mai</address>
+</Placemark>
+<Placemark><name>그래프 커피 29번</name><description>산미 제일 강함</description><styleUrl>#s8</styleUrl>
+<Point><coordinates>98.991563,18.791585,0</coordinates></Point>
+</Placemark>
+<Placemark><name>아카아마 프라싱점</name><description>아카족 직거래 · 매일 08:00-17:30 · 좌석 적음<br><br>※ 구글맵에서 "Akha Ama Coffee Phra Singh, Chiang Mai" 검색</description><styleUrl>#s8</styleUrl>
+<address>Akha Ama Coffee Phra Singh, Chiang Mai</address>
+</Placemark>
+<Placemark><name>Toffee Roasters</name><description>님만 · 07:00-16:00 · 토피 라떼 · 디저트<br><br>※ 구글맵에서 "Toffee Roasters, Nimman, Chiang Mai" 검색</description><styleUrl>#s8</styleUrl>
+<address>Toffee Roasters, Nimman, Chiang Mai</address>
+</Placemark>
+<Placemark><name>TWENTY MAR</name><description>라떼 존맛 · 삼왕상 옆</description><styleUrl>#s8</styleUrl>
+<Point><coordinates>98.9874,18.7902,0</coordinates></Point>
+</Placemark>
+<Placemark><name>페이퍼 스푼</name><description>한적 · 오래 앉아있기 좋음</description><styleUrl>#s8</styleUrl>
+<Point><coordinates>98.952928,18.780886,0</coordinates></Point>
+</Placemark>
+</Folder>
+</Document></kml>
