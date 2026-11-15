@@ -222,6 +222,7 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
 <nav>
   <div class="navrow">
     <a href="#pick">같이 정할 것</a>
+    <a href="#todo">예약·할 일</a>
     <a href="#plan">날짜별 · 지도</a>
     <a href="#cad">11/25 콤로이</a>
     <a href="#festival">축제</a>
@@ -233,6 +234,7 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <a href="#prep">입국·날씨</a>
     <a href="#careful">주의</a>
     <a href="#pack">짐</a>
+    <a href="#words">용어</a>
   </div>
 </nav>
 
@@ -297,8 +299,8 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <div class="pc good"><b>좋은 점</b><span>25m 수영장 + <b>40℃ 온천탕 + 14℃ 냉탕</b> 조합이 진짜 매력. “치앙마이에서 가장 저렴한 온천”이래. 샤워실 깨끗하고 샴푸·바디워시 있어서 <b>마지막 날 짐 맡기고 놀다 씻고 공항</b> 가기 딱 좋아.</span></div>
     <div class="pc bad"><b>걸리는 점</b><span>파도풀 아니고 <b>조용한 랩 수영장</b>이야. 선베드에서 칵테일 마시는 곳 아님. 수영장 안 <b>선크림 금지</b>, 소음도 엄격. 락커 있는지 확인 안 됨.</span></div>
     <div class="asklinks">
-      <a class="btn go" href="https://www.google.com/maps/search/?api=1&query=Looper%20Swimming%20Pool&query_place_id=ChIJqcUy8DI72jARCyQw56zsG5k" target="_blank" rel="noopener">지도</a>
-      <a class="btn" href="https://www.facebook.com/looperswimmingpool/" target="_blank" rel="noopener">페이스북</a>
+      <a class="btn go" href="https://www.google.com/maps/search/?api=1&query=Looper%20Swimming%20Pool&query_place_id=ChIJqcUy8DI72jARCyQw56zsG5k" target="_blank" rel="noopener">지도 · 사진 · 영업시간</a>
+      <a class="btn" href="https://www.facebook.com/looperswimmingpool/" target="_blank" rel="noopener">페이스북 (로그인 필요할 수도)</a>
     </div>
     <div class="note">님만 북서쪽 차로 10분. <b>수영 → 40℃ 온천 → 14℃ 냉탕 → 2층 카페</b> 코스로 1~3시간. 손님이 태국인이랑 디지털노마드라 차분해. 타월 대여 20밧.</div>
   </div>
@@ -316,6 +318,47 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <div class="note">10ml 기준 향 2종 390 / 3종 490 / 4종 590밧. 30ml은 3배, 50ml은 5배.<br>
     참고로 한국 블로그에 나오는 <b>“저널”이랑 “미스(MITH)”는 향수 가게지 공방이 아니야</b> — 만드는 게 아니라 사는 곳. 쇼핑은 아래 ‘먹기’ 섹션 밑에 적어뒀어.</div>
   </div>
+</section>
+
+<!-- ============ TODO ============ -->
+<section id="todo">
+  <div class="shead">
+    <h2>가기 전에 할 일</h2>
+    <p>예약이 필요한 건 🔖 표시. 누르면 체크돼. 출발까지 일주일이야.</p>
+  </div>
+
+  <h3 style="font-size:17px;margin:0 0 10px;color:var(--rose)">지금 바로 — 자리가 없어질 수 있는 것</h3>
+  <div class="pack">
+    <label><input type="checkbox" id="t1"><span>🔖 <b>CAD 바우처 확인</b> — 집합 장소가 CMECC 맞는지, 집합 시각, 셔틀 포함 여부</span></label>
+    <label><input type="checkbox" id="t2"><span>🔖 <b>식크릿쇼 테이블 예약</b> — 인스타 DM @6ixcretshow 또는 +66 98 298 3958. 늦으면 입석이야</span></label>
+    <label><input type="checkbox" id="t3"><span>🔖 <b>Fah Lanna 똑센 예약</b> — LINE @fahlannaspa. “둘이 한 방”이라고 꼭 적기</span></label>
+    <label><input type="checkbox" id="t4"><span>📞 <b>Sapphic Riot 영업일 확인</b> — +66 96 429 5692 또는 페이스북 DM. 월·화 휴무일 수 있어</span></label>
+    <label><input type="checkbox" id="t5"><span>🔖 <b>부아통 폭포 차량</b> — 호텔에 반나절 차량+기사 요청(800~1,200밧) 또는 투어 예약</span></label>
+    <label><input type="checkbox" id="t6"><span>📞 <b>Artistic Lab 향수</b> — 인스타 DM으로 예약 필요한지 + 영어 되는지</span></label>
+    <label><input type="checkbox" id="t7"><span>📧 <b>호텔에 11/25 차량 요청</b> — 12:30 출발, CMECC(700주년 경기장)</span></label>
+    <label><input type="checkbox" id="t8"><span>📧 <b>호텔에 미리 물어볼 것</b> — 조식 현장 추가 가격, 27일 짐 보관 가능한지</span></label>
+  </div>
+
+  <h3 style="font-size:17px;margin:28px 0 10px;color:var(--gold)">출발 전 며칠 안에</h3>
+  <div class="pack">
+    <label><input type="checkbox" id="t9"><span><b>TDAC 입국신고서</b> — 도착 3일 전부터, 즉 <b>11/19 이후</b>에 작성</span></label>
+    <label><input type="checkbox" id="t10"><span><b>이심 구매</b> — 개통일을 <b>11/22</b>로</span></label>
+    <label><input type="checkbox" id="t11"><span><b>환전</b> — 둘이 8,000~10,000밧. 원화 5만원권으로 가져가서 시내에서 바꾸기</span></label>
+    <label><input type="checkbox" id="t12"><span><b>트래블월렛 충전</b> + 그랩 앱에 카드 등록 (한국에서 미리)</span></label>
+    <label><input type="checkbox" id="t13"><span><b>그랩 앱 설치</b> — 한국에서 미리 깔고 로그인까지</span></label>
+    <label><input type="checkbox" id="t14"><span><b>여행자보험</b></span></label>
+    <label><input type="checkbox" id="t15"><span><b>구글맵에 장소 저장</b> — 이 페이지 핀들 미리 별표</span></label>
+  </div>
+
+  <h3 style="font-size:17px;margin:28px 0 10px;color:var(--jade)">출발 직전 (11/20~21)</h3>
+  <div class="pack">
+    <label><input type="checkbox" id="t16"><span>🏮 <b>치앙마이시 페이스북 확인</b> — 축제 공식 시간표·도로 통제가 그때쯤 올라와</span></label>
+    <label><input type="checkbox" id="t17"><span><b>항공편 시간 재확인</b></span></label>
+    <label><input type="checkbox" id="t18"><span><b>CAD 운영사에 픽업 위치 재확인</b> — 축제 때문에 당일 바뀔 수 있어</span></label>
+  </div>
+
+  <div class="note warn">🔖 <b>예약 안 하면 못 하는 것:</b> 식크릿쇼(테이블), Fah Lanna 똑센, 부아통 차량.<br>
+  <b>예약 없이 그냥 가도 되는 것:</b> 무에타이(워크인), Looper(워크인), North Gate Jazz(예약 자체가 안 됨), Green Bamboo(당일 전화), Artistic Lab(워크인 환영).</div>
 </section>
 
 <!-- ============ RHYTHM ============ -->
@@ -1096,6 +1139,38 @@ footer{padding-block:34px 44px;color:var(--ink3);font-size:12.5px;text-align:cen
     <label><input type="checkbox" id="k14"><span>트래블월렛 충전</span></label>
   </div>
   <div class="note tip">🧴 <b>안 챙겨도 되는 것:</b> 손풍기, 돼지코 어댑터(태국은 한국 플러그 그대로 들어가), 세면용품(세븐일레븐에 다 있음), 샤워필터(숙소에 있는 경우 많음), 요가매트.</div>
+</section>
+
+<!-- ============ WORDS ============ -->
+<section id="words">
+  <div class="shead">
+    <h2>용어</h2>
+    <p>페이지에 나오는 말 중에 처음 보면 헷갈릴 만한 것들.</p>
+  </div>
+
+  <div class="tblwrap">
+    <table>
+      <tr><th>말</th><th>뜻</th></tr>
+      <tr><td><b>달글</b></td><td>여성시대 카페의 “달리는 글” — 댓글로 수다 떠는 글. 이 페이지 정보 대부분이 여기 댓글 2,000개에서 나왔어</td></tr>
+      <tr><td><b>왓켓</b></td><td>우리 숙소 동네. 핑강 동쪽의 옛 상인 마을이라 조용하고 예뻐</td></tr>
+      <tr><td><b>썽태우</b></td><td>빨간 트럭 합승택시. 손 흔들어 세우고 목적지 말한 다음 가격 합의하고 타. 축제 때 그랩 안 잡히면 이게 답</td></tr>
+      <tr><td><b>똑센</b></td><td>북부(란나) 전통 마사지. <b>나무망치로 두드려서</b> 근막을 풀어. 일반 타이마사지랑 완전히 달라</td></tr>
+      <tr><td><b>세븐일레븐</b></td><td>태국 편의점. 한 블록에 두 개씩 있어. 하트치약·몬치치·에코백 성지이고 도시락도 데워줘</td></tr>
+      <tr><td><b>빅씨</b></td><td>대형마트 (이마트 느낌). 과자·치약 대량 구매용</td></tr>
+      <tr><td><b>왓슨스</b></td><td>드럭스토어 (올리브영 느낌). 치약 1+1 자주 해</td></tr>
+      <tr><td><b>림핑</b></td><td>고급 슈퍼마켓. 수입 식품이랑 선물용 간식</td></tr>
+      <tr><td><b>징짜이 / 와로롯 / 아누산</b></td><td>마켓 이름. 징짜이=수공예·카페, 와로롯=재래시장(제일 쌈), 아누산=나이트바자 안 기념품 구역</td></tr>
+      <tr><td><b>수끼</b></td><td>태국식 샤브샤브. 창푸악 수끼가 달글 1위 맛집</td></tr>
+      <tr><td><b>무삥 / 품뎅</b></td><td>돼지고기 꼬치 / 삼겹살 꼬치. 길거리 음식</td></tr>
+      <tr><td><b>로띠</b></td><td>밀전병 디저트. 바나나·연유·초콜릿 올려서 구워줘</td></tr>
+      <tr><td><b>쏨땀</b></td><td>파파야 샐러드. 맵기 조절해달라고 하면 돼</td></tr>
+      <tr><td><b>카오소이</b></td><td>치앙마이 대표 음식. 코코넛 커리 국수에 튀긴 면 올려줘</td></tr>
+      <tr><td><b>팟카파오 / 팟씨유</b></td><td>바질 고기 덮밥 / 간장 볶음면</td></tr>
+      <tr><td><b>태방이</b></td><td>태국 코끼리 캐릭터 인형. 공항 킹파워에서만 팔아</td></tr>
+      <tr><td><b>하이젠</b></td><td>태국 방향제 브랜드. 발향 강해서 선물용 인기</td></tr>
+      <tr><td><b>몬치치</b></td><td>세븐일레븐에서 주는 사은품 캐릭터. 달라고 말해야 줘</td></tr>
+    </table>
+  </div>
 </section>
 
 <footer>
